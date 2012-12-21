@@ -1,2 +1,2 @@
-mypage
+My Personal WebPage
 ======
