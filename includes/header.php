@@ -1,4 +1,4 @@
-	<base href="http://lamson.me" />
+
 	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
 
 	<!-- customized -->
@@ -12,6 +12,7 @@
 
 
 	<link rel="stylesheet" type="text/css" media="all" href="http://projects.lamson.me/klphotos/templates/theworldin35mm/themes/light.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://lamson.me/css/style.css" />
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" media="all" href="templates/theworldin35mm/css/theworldin35mm-ie.css" charset="utf-8" />
 	<![endif]-->

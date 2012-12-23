@@ -3,11 +3,8 @@
 <head>
 	<title>Son Nguyen's Personal WebPage</title>
 	
-	 <?php include "includes/header.php" ?>
+	<?php include "includes/header.php" ?>
 	 
-	<link href="css/index.css" type="text/css" rel="stylesheet" />
-<!-- 	<link href="css/projects.css" type="text/css" rel="stylesheet" /> -->
-
 </head>
 
 <body>
@@ -34,9 +31,23 @@
 					
 					<p>My name is Son Nguyen, and welcome to my website!</p>
 					
-					<p>This page is still under development. For now, you can read more about my old and current projects <a href="/projects">here</a>. This personal web page is also one of my current projects that I just started recently to practice my web design skills. </p>
+					<p>This page is still under development. For now, you can read more about my past and current projects <a href="/projects">here</a>. This personal web page is also one of my current projects that I just started recently to practice my web design skills. </p>
 					
-					<p>If you have any questions/suggestions for me, please <a href="mailto:son@lamson.me">send me an email</a> or reach me via my cell phone number: (206) four-three-two 5142. Thanks!</p>
+					<p>If you have any questions/suggestions for me, please <a href="mailto:son@lamson.me">send me an email.</a> Thanks!</p>
+					
+					<p><a href="http://www.linkedin.com/in/lamson6592">
+      
+							<img src="images/btn_linkedin.png" width="160" height="33" border="0" alt="View Son Nguyen's profile on LinkedIn">     
+        
+						</a> 
+          			
+						<a href="https://www.github.com/lamson6592">
+						
+	          				<img src="images/btn_github.png" height="33" border="0" alt="View Son Nguyen's repo on GitHub">
+	          				
+	          			</a>
+          			
+          			</p>
 							
 					<img src="images/meee.jpg" alt="picture of me" title="my picture"/>	
 									
@@ -46,9 +57,9 @@
 			
 			
 			<div id="footer">
-				<div id="copyright">&copy Son Nguyen, 2012. All Rights Reserved.</div>
-				
+				<?php include "includes/footer.php" ?>				
 			</div>
+			
 		</div> <!-- end wrapper -->
 	</div> <!-- end royal-wrapper -->
 

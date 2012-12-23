@@ -1,0 +1,29 @@
+/spacetrader
+_self
+Space Trader
+A classic game of Space Trader that utilizes the Android SDK. The original game was developed by Pieter Spronck. You can read more about its historical details <a href="http://en.wikipedia.org/wiki/Space_Trader_%28Palm_OS%29">here.</a> This game is implemented by myself and 3 other teammates at Georgia Tech.
+
+/tetris
+_blank
+"Simple" Tetris
+A game of Tetris implemented in the browser using HTML5, CSS3, and JavaScript with jQuery library. My good friend Evan Whitfield and I built this game during Yahoo! Hackathon at the University of Washington, in 6-hours Lightning Round. We learned a small part of jQuery library in an extra session on the day of the Hackathon and decided to use this library to implement this game.
+
+/15puzzle
+_self
+Fifteen Puzzle
+A game of Fifteen Puzzle implemented in the browser using HTML5, CSS3, and JavaScript with Prototype library. This is the first game that I made to learn web programming.
+
+/intel
+_blank
+Intel - code4good
+An educational and interactive game which targets young children and their families to raise health and nutrition awareness. Users gets to learn health and nutrition via questions, unlock new games by answering questions, earn credits to purchase in-app puzzles (on going project). This game were implemented using PHP, HTML5, CSS3, and JavaScript on the not-yet-released Intel Ultrabook. We take the advantages of the touch screen and utilize HTML5 new features. The app handles multiple touches as well as letting user drag and drop objects on the touch screen. I worked on this project with 3 other team members during Intel - Code for Good 24 hours Hackathon at Georgia Tech.
+
+/linkboard
+_self
+LinkBoard
+Forget your bookmarks bar. Use "LinkBoard" instead!!! This is one of my current just-4-fun project. I have this as my homepage in my web browser. It saves me lots of time typing. My goal for this project is to replace all the keys with the logos/icons of the sites.
+
+/klphotos
+_blank
+KLphotography
+A photo blog for my best friend, Khai Le, to show his beautiful photos. I played around with PixelPost for uploading/storing images in MySQL database, and custom HTML5, CSS3. This photo blog is still under development and will be published as soon as Khai is happy with it.
