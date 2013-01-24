@@ -10,6 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" media="all" href="http://projects.lamson.me/klphotos/templates/theworldin35mm/themes/light.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="http://lamson.me/css/style.css" />

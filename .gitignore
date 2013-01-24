@@ -2,7 +2,11 @@
 php.ini
 images
 files
+libs
+amwedding
 projects/intel
+projects/intel-code4good
+projects/thumbsy
 projects/15puzzle
 projects/linkboard
 projects/hacku12
