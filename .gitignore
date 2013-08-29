@@ -1,19 +1,20 @@
+
+# random #
+##################
 .htaccess
 php.ini
-images
-files
-libs
-amwedding
-projects/intel
-projects/intel-code4good
-projects/thumbsy
-projects/15puzzle
-projects/linkboard
-projects/hacku12
-projects/klphotos
-projects/tetris
-stuff
-uni
+
+# folders #
+##################
+
+images/
+files/
+libs/
+amwedding/
+stuff/
+projects/
+yooniebakery.com/
+.idea/
 
 # Compiled source #
 ###################
