@@ -7,7 +7,7 @@
 	 
 </head>
 
-<body>
+<body class="post_layout">
 
 	<div id="royal-wrapper" style="width: 960px;">
 		<div id="wrapper" style="width: 930px;">
@@ -41,7 +41,7 @@
         
 						</a> 
           			
-						<a href="https://www.github.com/lamson6592">
+						<a href="https://www.github.com/lamson">
 						
 	          				<img src="images/btn_github.png" height="33" border="0" alt="View Son Nguyen's repo on GitHub">
 	          				
@@ -55,6 +55,13 @@
 			
 			</div> <!-- end main div -->
 			
+			
+			<!-- Le javascript
+			================================================== -->
+			<!-- Placed at the end of the document so the pages load faster -->
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script src="docs/js/d3.v2.min.js"></script>
+			<script src="docs/js/voronoi.js"></script>
 			
 			<div id="footer">
 				<?php include "includes/footer.php" ?>				
