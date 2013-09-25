@@ -9,6 +9,22 @@
 
 <body class="post_layout">
 
+<div id="fb-root"></div>
+<script>
+    // Load the SDK Asynchronously
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
 	<div id="royal-wrapper" style="width: 960px;">
 		<div id="wrapper" style="width: 930px;">
 		

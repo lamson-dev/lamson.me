@@ -1,3 +1,8 @@
+/cloudsms
+_self
+Cloud SMS
+An application that allows users to send and receive SMS messages via their computers. This application interacts with user's Android device to ask it to send the messages by itself. Therefore, it uses current user phone number, which basically the same as texting on the phone, but now on the computer. Please click on the project's name to see a demo.
+
 /spacetrader
 _self
 Space Trader
