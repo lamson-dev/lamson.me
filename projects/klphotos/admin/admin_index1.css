@@ -1,0 +1,348 @@
+/* .............................. */
+/* SVN file version: */
+/* $ID$ */
+/* Basic */
+/* .............................. */
+
+body {
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666;
+	background-color: #333333;
+   }
+
+/* .............................. */
+/* Links */
+/* .............................. */
+
+a {
+	color:#0099FF;
+	text-decoration:none;
+   }
+
+/* .............................. */
+/* Wrapper */
+/* .............................. */
+
+#wrapper {
+	margin:20px auto;
+	padding:0px;
+	width:800px;
+	text-align:left;
+	background:#F6F6F6;
+	color:#666;
+	border:1px solid #ccc;
+   }
+
+/* .............................. */
+/* Header */
+/* .............................. */
+
+#header {
+	margin:0px;
+	padding-top:24px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:0px;
+	font-family:Helvetica, verdana, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color:#F9F9F9;
+	letter-spacing:2px;
+	font-variant:small-caps;
+	background-color: #91C810;
+   }
+
+#header a {
+   color:#F9F9F9;
+   text-decoration:none;
+   }
+
+#header a:hover {
+   color:#E4E4E4;
+   text-decoration:underline;
+   }
+/* .............................. */
+/* Navigation */
+/* .............................. */
+
+#navigation {
+	clear:right;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background:#ffffff;
+	color:#333333;
+	font-size:12px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	line-height: 26px;
+   }
+
+#navigation a {
+	color:#333333;
+	padding:5px;
+   }
+
+#navigation a:hover {
+	background:#F4F4F4;
+	color:#666666;
+	text-decoration: underline;
+   }
+
+#submenu {
+   border-bottom:1px solid #ccc;
+   border-top:1px solid #ccc;
+   padding-top:5px;
+   padding-bottom:5px;
+   background:#fff;
+   color:#666;
+   font-weight:bold;
+   font-size:10px;
+   margin:10px auto;
+   text-align:center;
+   }
+
+#submenu a {
+   padding:5px;
+   }
+
+#submenu a:hover {
+   background:#f4f4f4;
+   color:#666
+   }
+
+/* .............................. */
+/* Captions */
+/* .............................. */
+
+#caption {
+	margin:0px 0px 10px 0px;
+	padding:7px;
+	font-size:10px;
+	color:#666;
+	font-weight:normal;
+	text-align:right;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	background:url('img/back2.gif') repeat-x;
+	text-decoration: underline;
+   }
+
+.jcaption {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin:0px 0px;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:10px;
+	padding-right:0px;
+	font-family:Helvetica, verdana, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#666;
+	background-color: #E4E4E4;
+   }
+
+/* .............................. */
+/* Content and titles */
+/* .............................. */
+
+.content {
+   border:0px solid #000;
+   margin-left:0px;
+   margin-right:0px;
+   margin-top:10px;
+   margin-bottom:10px;
+   padding:10px;
+   font-size:11px;
+   color:#666;
+   }
+
+.content ul {
+   list-style:none;
+   display:block;
+   margin:0px;
+   padding:0px;
+   }
+
+.content ul li {
+   padding:10px;
+   margin:0px 0px 5px 0px;
+   border-top:0px;
+   border-left:0px;
+   border-right:0px;
+   border-bottom:1px solid #ccc;
+   }
+
+.content ul li img {
+   border:1px solid black;
+   float:left;
+   margin:5px 10px 0px 0px;
+   height:40px;
+   }
+
+.content ul a:hover {
+   text-decoration:underline;
+   color:#000;
+   background-color:#f5f5f1;
+   }
+
+
+/* .............................. */
+/* Misc. */
+/* .............................. */
+
+input {padding:2px;}
+
+.right {margin-left:2%;}
+.smaller {font-size:9px;font-weight:normal;}
+
+.item {
+   border:0px;
+   float:left;
+   padding-right:5px;
+   margin-right:5px;
+   font-weight:bolder;
+   font-size:110%;
+}
+
+hr {
+   background-color:#ccc;
+   height:1px;
+   border:0px;
+   }
+
+.selectedsubmenu {color:#666;}
+.published-comment {background-color:#f4f6f1;color:#666;}
+.unpublished-comment {background-color:#fff9e1;color:#666;}
+
+.cmnt-buttons {
+   background:#f5f5f5;
+   border:1px solid #aaa;
+   color:#666;
+   border-bottom:2px solid #aaa;
+   border-right:2px solid #aaa;
+   font-size:10px;
+   }
+
+.confirm {
+    font-size:12px;
+   font-weight:bold;
+   color:red;
+}
+
+
+#cattable {
+   width:100%;
+   margin:0px;
+   padding:1px;
+   clear:both;
+   }
+
+#cattable td {
+   width:25%;
+   }
+
+#logo {
+   position:relative;
+   float:left;
+   border:0px;
+   margin:0px 18px;
+   padding:0px;
+   }
+
+#itemimg {
+   margin-left:20px;
+   margin-top:5px;
+   border:1px solid #ccc;
+   }
+
+#photonumb {
+	color:#0099FF;
+	font-weight:bold;
+}
+
+#warning {
+   font-size:12px;
+   font-weight:bold;
+   color:#000;
+   background-color:#c30;
+   font-family:arial,verdana,sans-serif;
+   text-align:center;
+   margin-left:30%;
+   margin-right:30%;
+   padding:6px;
+   }
+#datetable {
+   text-align:center;
+   }
+
+#datetable td {
+   width:30px;
+   }
+
+#datetable td.gap {
+   width:5px;
+   }
+
+.images-checkbox{
+   margin-bottom:0px;
+   margin-top:0px;
+   margin-left:0px;
+   margin-right:0px;
+   }
+input {
+   background:#E4E4E4;
+   }
+.center {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	width: 665px;
+	}.addon_on {
+	background-color: #B3EE28;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #91C810;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #91C810;
+}
+.addon_on a {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-style: normal;
+}
+
+.addon_off {
+	background-color: #817C7C;
+	color: #FFFFFF;
+	font-style: italic;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #333333;
+	border-bottom-color: #333333;
+	border-bottom-width: 1px;
+}
+.addon_off a {
+	color: #FFFFFF;
+	text-decoration: underline;
+	font-weight: bold;
+	font-style: normal;
+}

@@ -1,0 +1,107 @@
+html {
+	background-color: #202020;
+	border-top: 0.2em solid #999999;
+	color: #ffffff;
+}
+body {
+	background-color: #202020;
+	color: #ffffff;
+}
+a,a:link,a:visited {
+	color: #666666;
+}
+a:hover,a:active {
+	color: #ff9933;
+}
+#site-title {
+	color: #ffffff;
+}
+#site-title a,
+#site-title a:link,
+#site-title a:visited,
+#site-title a:active {
+	color: #ffffff;
+}
+#img-title a,
+#img-title a:link,
+#img-title a:visited {
+	color: #ffffff;
+}
+#img-title a:hover,
+#img-title a:active {
+	color: #ff9933;
+}
+#img-info-comment {
+	background: transparent url(./dark/comment_icon-dark.gif) no-repeat 0% 50%;
+}
+#notes-cmts-container {
+	background-color: #333333;
+	border: 1px solid #999999;
+}
+div.bubble blockquote {
+	background-color: #666666;
+	border: 1px solid #999999;
+}
+div.owner blockquote {
+	font-style: italic;
+}
+div.bubble div.tip {
+	background: transparent url(./dark/tip-dark.gif) no-repeat 0% 0%;
+}
+#img-comments li {
+	border-bottom: 1px solid #999999;
+}
+#img-comments fieldset {
+	border: none;
+}
+#img-comments .button,
+#img-comments input,
+#img-comments label,
+#img-comments select,
+#img-comments textarea {
+	color: #666666;
+}
+#img-comments input,
+#img-comments textarea,
+#img-comments select {
+	background-color: #cccccc;
+	border: 1px solid #666666;
+}
+#img-comments .button {
+	background-color: #999999;
+	border-width: 3px;
+	border-style: double;
+	border-color: rgb(221, 221, 221) rgb(187, 187, 187) rgb(170, 170, 170) rgb(204, 204, 204);
+}
+#browse-nav-container li {
+	border-bottom: 1px solid #6e6e6e;
+}
+.border-frame {
+	background: #f5f5f5 url(./dark/loader-dark-32x32.gif) no-repeat 50% 50%;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(221, 221, 221) rgb(187, 187, 187) rgb(170, 170, 170) rgb(204, 204, 204);
+}
+.thumbnail-border-frame {
+	background: #f5f5f5 url(./dark/loader-dark-16x16.gif) no-repeat 50% 50%;
+}
+img.border-matte {
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(170, 170, 170) rgb(204, 204, 204) rgb(221, 221, 221) rgb(187, 187, 187);
+}
+.paginator .this-page {
+	border: 1px dotted #999999;
+	color: #ff9933;
+}
+.paginator a,
+.paginator a:link,
+.paginator a:visited {
+	border: 1px solid #999999;
+}
+#paging-nav-container div.results {
+	color: #999999;
+}
+#footer {
+	border-top: 1px solid #999999;
+}

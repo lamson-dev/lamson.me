@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+<title><SITE_TITLE></title>
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="templates/honey/honey.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function changeValue(def_val, sender) {
+    if (sender.value == def_val) {
+        sender.value = "";
+    } else if (sender.value == "") {
+        sender.value = def_val;
+    }
+}
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="500" border="0" align="center" cellpadding="0" cellspacing="0" id="main">
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="navigation">
+        <tr>
+          <td width="50%" class="title"><a href="index.php"><SITE_TITLE></a></td>
+          <td align="right"><a title="browse" href="index.php?x=browse&amp;pagenum=1">archive</a> / <a title="about + links" href="index.php?x=about">about</a> / <a href="index.php?x=rss" title="RSS">rss</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC" id="image-title">
+        <tr> 
+          <td class="title"><img src="templates/honey/categories.png" align="absmiddle"> <img src="templates/honey/tags.png" align="absmiddle"> <CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE></td>
+          <td align="right"><img src="templates/honey/book.png" align="absmiddle"> page: <ARCHIVE_PAGES_NUM> 
+            / <THUMBNAILS_PAGES_LINKS></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td align="center"><div id="thumbs"><THUMBNAILS_WHOLE_PAGED></div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC" class="categories1"><img src="templates/honey/categories.png" align="absmiddle"> BROWSE BY CATEGORIES/MONTHS ...</td>
+  </tr>
+  <tr> 
+    <td id="dropdown"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><BROWSE_MONTHLY_ARCHIVE_PAGED></td>
+          <td align="right"><BROWSE_CATEGORIES_PAGED></td>
+  </tr>
+</table>
+</td>
+       
+  </tr>
+  <tr>
+    <td bgcolor="#CCCCCC" class="categories1"><img src="templates/honey/tags.png" align="absmiddle"> BROWSE BY TAGS ...</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td id="tagcloud"><TAG_LINKS_AS_LIST_PAGED_NO_NUM></td>
+        </tr>
+      </table>
+</td></tr>
+  <tr>
+    <td><table width="100%" border="0" cellpadding="0" cellspacing="5" bgcolor="#CCCCCC" id="copyright">
+        <tr>
+    <td><span class="title"><SITE_TITLE></span> &copy; 2009</td>
+          <td align="right">Template "honey" made by <a href="http://potd.deenee.de/">deenee</a> 
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

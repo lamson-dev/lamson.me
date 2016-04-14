@@ -1,0 +1,395 @@
+/* .............................. */
+/* SVN file version: */
+/* $ID$ */
+/* Basic */
+/* .............................. */
+
+body {
+	background:#FFF url(img/ppost-refresh/pprefresh_bg.gif) top repeat-x;
+	margin:0 20% 0 0;
+	padding:0;
+	text-align:center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	font-size:14px;
+	color:#666;
+}
+
+/* .............................. */
+/* Links */
+/* .............................. */
+
+a {
+	color:#9d79b2;
+	text-decoration:none;
+}
+   
+a:hover {
+	color:#888;
+}
+
+/* .............................. */
+/* Wrapper */
+/* .............................. */
+
+#wrapper {
+	margin:0;
+	padding:0 0 0 20px;
+	width:100%;
+	_width:98%; /* IE6 */
+	text-align:left;
+	color:#666;
+}
+
+/* .............................. */
+/* Header */
+/* .............................. */
+
+#header {
+	margin:45px 0 20px 0;
+	padding:20px 0 0 0;
+	height:81px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	font-size:26px;
+	color:#F9F9F9;
+	letter-spacing:2px;
+}
+
+#header a {
+	color:#F9F9F9;
+	text-decoration:none;
+}
+
+#header a:hover {
+	color:#bc91d4;
+}
+
+/* .............................. */
+/* Navigation */
+/* .............................. */
+
+#navigation {
+	clear:right;
+	top:0;
+	position:fixed;
+	_position:absolute; /* IE6 */
+	color:#bc91d4;
+	font-size:14px;
+	text-align:left;
+	line-height:32px;
+	background:#373737;
+	padding:0 0 0 10px;
+	width:100%;
+	margin:0 0 0 -20px;
+	border-bottom:1px solid #6A6A6A;
+}
+
+#navigation a {
+	color:#bc91d4;
+	text-decoration:none;
+	padding:8px;
+}
+
+#navigation a:hover {
+	color:#dddddd;
+}
+
+#submenu {
+	background:#fff;
+	color:#666;
+	font-size:14px;
+	margin:10px auto;
+	border:1px solid #d0d0cf;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding:5px;
+	text-transform:lowercase;
+}
+
+#submenu a {
+	padding:5px;
+}
+
+#submenu a:hover {
+	color:#666
+}
+
+/* .............................. */
+/* Captions */
+/* .............................. */
+
+#caption {
+	margin:0 0 10px 0;
+	padding:7px 10px;
+	font-size:16px;
+	background:#bc91d4;
+	color:#FFF;
+	border:1px solid #9d79b2;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.jcaption, .addon_on, .addon_off, .addon_error {
+	margin:0px 0px;
+	padding:5px 0 5px 10px;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#FFF;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.jcaption {
+	background:#b6b6b6;
+	border:1px solid #999999;
+	margin:0 0 5px 0;
+}
+   
+.jcaption a {
+	color:#583a69;
+}
+
+.jcaption a:hover {
+	color:#5d5661;
+}
+
+.addon_on {
+	color:#666;
+	background:#e4f2bc url(img/ppost-refresh/addon_on.gif) right no-repeat;
+	border:1px solid #aad42a;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.addon_off {
+	background:#ffd1d1 url(img/ppost-refresh/addon_off.gif) right no-repeat;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #d7a4a4;
+	color:#666;
+}
+
+.addon_error {
+	background:#d9d9d9 url(img/ppost-refresh/addon_error.gif) right no-repeat;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #bcbcbc;
+	color:#666;
+}
+
+/* .............................. */
+/* Content and titles */
+/* .............................. */
+
+.content {
+	border:0px solid #000;
+	margin:10px 0 0 10px;
+	padding:10px;
+	font-size:14px;
+	color:#666;
+}
+
+.content ul {
+	list-style:none;
+	display:block;
+	margin:20px 0 20px 0;
+	padding:0px;
+}
+
+.content ul li {
+	padding:10px;
+	margin:0 0 10px 0;
+}
+
+.content ul li img {
+	border:1px solid black;
+	float:left;
+	margin:5px 10px 0px 0px;
+	height:40px;
+}
+
+.content ul a:hover {
+	text-decoration:underline;
+	color:#535353;
+}
+
+
+/* .............................. */
+/* Misc. */
+/* .............................. */
+
+input, textarea, select {
+	padding:5px;
+	border:1px solid #c8c8c8;
+	background:#FFF url(img/ppost-refresh/pprefresh_input.gif) top repeat-x !important;
+	font-family:Arial, Verdana, sans-serif;
+}
+	
+select {
+	padding:1px 0 1px 3px;
+}
+
+.right {
+	margin-left:2%;
+}
+
+.smaller {
+	font-size:9px;
+	font-weight:normal;
+}
+
+.item {
+	border:0px;
+	float:left;
+	padding-right:5px;
+	margin-right:5px;
+	font-weight:bolder;
+	font-size:110%;
+}
+
+hr {
+	display:none;
+}
+
+.selectedsubmenu {
+	color:#666;
+}
+
+.published-comment {
+	color:#666;
+	background:#e4f2bc url(img/ppost-refresh/accept.gif) top right no-repeat;
+	border:1px solid #aad42a;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.unpublished-comment, .akismet-spam-comment {
+	background:#ffd1d1 url(img/ppost-refresh/moderation.gif) top right no-repeat !important;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #d7a4a4;
+	color:#666;
+}
+
+.cmnt-buttons {
+	background:#FFF url(img/ppost-refresh/pprefresh_input.gif) top repeat-x !important;
+	border:1px solid #aaa;
+	color:#666;
+	font-size:12px;
+}
+
+.confirm {
+	font-size:14px;
+	font-weight:bold;
+	color:red;
+}
+
+
+#cattable {
+	width:100%;
+	margin:0px;
+	padding:1px;
+	clear:both;
+}
+
+#cattable td {
+	width:25%;
+}
+
+#logo {
+	position:relative;
+	float:left;
+	border:0px;
+	margin:0px 18px;
+	padding:0px;
+}
+
+#itemimg {
+	margin-left:20px;
+	margin-top:5px;
+	border:1px solid #ccc;
+}
+
+#photonumb {
+	color:#535353;
+	font:16px Georgia, Times New Roman, serif;
+}
+
+#warning {
+   	font-size:12px;
+   	font-weight:bold;
+   	color:#FFF;
+   	background-color:#c30;
+   	padding:10px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #a0300b;
+}
+
+#datetable {
+   	text-align:center;
+}
+
+#datetable td {
+   	width:30px;
+}
+
+#datetable td.gap {
+  	width:5px;
+}
+
+.images-checkbox {
+margin:0 5px 3px 0;
+}
+
+/* .............................. */
+/* Defensio Styling */
+/* .............................. */
+
+.defensio_spam0, .defensio_spam1, .defensio_spam2, .defensio_spam3, .defensio_spam4, .defensio_spam5, .defensio_spam6, .defensio_spam7, .defensio_spam8, .defensio_spam9 {
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #d7a4a4;
+	color:#666;
+}
+
+.defensio_spam0 {background-color: #ffffff;border-bottom: 1px solid #ccc;}
+.defensio_spam1 {background-color: #fceeee;}
+.defensio_spam2 {background-color: #fde6e6;}
+.defensio_spam3 {background-color: #fddede;}
+.defensio_spam4 {background-color: #fdd7d7;}
+.defensio_spam5 {background-color: #fed1d1;}
+.defensio_spam6 {background-color: #ffcbcb;}
+.defensio_spam7 {background-color: #fec4c4;}
+.defensio_spam8 {background-color: #febdbd;}
+.defensio_spam9 {background-color: #ffb8b8;}
+
+.defensio_not_checked {
+	background:#ffd1d1 url(img/ppost-refresh/moderation.gif) top right no-repeat !important;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #d7a4a4;
+	color:#666;
+}

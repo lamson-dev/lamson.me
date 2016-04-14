@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- start site title -->
+<title><SITE_TITLE> | Fotos</title>
+<!-- end site title -->
+<!-- start feed -->
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<!-- end feed -->
+<!-- start meta data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- end meta data -->
+<!-- start css -->
+<link href="templates/lunas/lunas.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="templates/lunas/favicon.ico" type="image/x-icon" />
+<!--[if IE]>
+<style type="text/css">
+p.iepara{ /*Conditional CSS- For IE (inc IE7), create 1em spacing between menu and paragraph that follows*/
+padding-top: 1em;
+}
+</style>
+<![endif]-->
+<!-- end css -->
+<!-- start script -->
+<script src="templates/lunas/scripts/lib/prototype.js" type="text/javascript"></script>
+<script src="templates/lunas/scripts/src/scriptaculous.js" type="text/javascript"></script>
+<!-- boxover script is from http://boxover.swazz.org/ -->
+<script type="text/javascript" src="templates/lunas/scripts/boxover.js"></script>
+<script type="text/javascript">
+function changeValue(def_val, sender) {
+    if (sender.value == def_val) {
+        sender.value = "";
+    } else if (sender.value == "") {
+        sender.value = def_val;
+    }
+}
+</script>
+<!-- end script -->
+</head>
+<body>
+<!-- start wrapper -->
+	<div id="wrapper">
+<!-- start leftnavi -->
+	<div id="leftnavi">
+	  <img src="templates/lunas/images/ur.png" border="none" alt="" />
+	</div>
+<!-- end leftnavi -->
+<!-- start center -->
+	<div id="center">
+	<!-- start header -->
+		<div id="header">
+        	<!-- start logo -->
+			<div id="logo"><a href="index.php"><img src="templates/lunas/images/logo.png" width="200" height="80" alt="" /></a></div>
+			<!-- end logo -->
+        	<!-- start menu -->
+			<div id="menu"><a href="index.php">home</a> &middot;  
+          <a href="index.php?x=browse&amp;pagenum=1">fotos</a> &middot; 
+          <a href="index.php?x=about">about</a> <br />
+&nbsp;&nbsp;<br />
+        &nbsp; </div>
+			<!-- end menu -->
+      </div>
+	<!-- end header -->
+    <!-- start content -->
+		<div id="content">
+		<!-- start thumbnail navigation -->
+ 		 <div class="content">
+		<!-- start dropdown fields -->
+  		<div class="imgnavi">
+  		<BROWSE_CATEGORIES_PAGED>&nbsp;
+   		<BROWSE_MONTHLY_ARCHIVE_PAGED>&nbsp;
+  		</div>
+		<!-- end dropdown fields -->	
+	<!-- start cat/tag name -->
+ 	  <div class="image-title"><CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE></div>
+	<!-- end cat/tag name -->
+        <div class="clear"></div>
+	<!-- start tag cloud -->
+	   &nbsp;&nbsp;<br />
+       <div id="tagcloud"><TAG_LINKS_AS_LIST_PAGED_NO_NUM><br />
+       </div>
+	<!-- end tag cloud -->
+		<!-- start thumbnails -->
+  		<div class="image">
+	<div id="trow"><THUMBNAILS_WHOLE_PAGED></div>
+	  </div>
+	<!-- end thumbnails -->  
+	<!-- start page navigation -->
+		<div id="statistics"><p>
+        &nbsp;&nbsp;<br />
+	  Seite <ARCHIVE_PAGES_NUM> | <THUMBNAILS_PAGES_LINKS><br />
+	  </p></div>
+	<!-- end page navigation -->
+	  </div>
+	<!-- end thumbnail navigation -->
+            <div class="clear"></div>
+        </div>
+	<!-- end content -->
+     <!-- start footer -->
+		<div id="footer"><p> &copy; 2009 <a href="index.php"><SITE_TITLE>
+            </a> </p></div>
+	<!-- end footer -->
+	</div>
+	<!-- end center -->
+<!-- start rightnavi -->
+	<div id="rightnavi">
+		<img src="templates/lunas/images/ur.png" border="none" alt="" />
+	</div>
+<!-- end rightnavi -->
+</div>
+<!-- end wrapper -->
+</body>
+</html>

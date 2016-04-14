@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title><SITE_TITLE></title>
+<!-- Link for ATOM feed autodiscovery -->
+<ATOM_AUTODETECT_LINK>
+<!-- Link for RSS feed autodiscovery -->
+<RSS_AUTODETECT_LINK>
+<!-- META -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+<meta http-equiv="content-type" name="description" content="<IMAGE_TITLE> ~ <IMAGE_NOTES_CLEAN> ~ <SITE_TITLE> PhotoBlog" />
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="templates/smoothoperator-dark/styles/smoothoperator-dark.css" />
+<!-- SCRIPTS -->
+<script src="templates/smoothoperator-dark/scripts/lib/prototype.js" type="text/javascript"></script>
+<script src="templates/smoothoperator-dark/scripts/src/scriptaculous.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function clearBox(box) {
+		 if(box.value==box.defaultValue) {
+	 	 	 box.value = "";
+	 	 }
+	 }
+//-->
+</script>
+<MEDIARSS_AUTODETECT_LINK>
+</head>
+
+<body>
+
+<script type="text/javascript" src="templates/horizon/fader.js"></script>
+
+
+
+<div id="image-info" style="display:none">
+
+<div class="inside">
+<h2><IMAGE_TITLE> <em><IMAGE_DATE></em> <em><IMAGE_COMMENTS_NUMBER> <IMAGE_COMMENT_TEXT></em> </h2>
+
+<div id="image_notes">
+<IMAGE_NOTES>
+<p><a href="#" onclick="Effect.toggle('image-info','BLIND'); return false;">(close)</a></p>
+
+<div id="addcomment">
+<form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'>
+<textarea name='message' rows='2' cols='40' onfocus="clearBox(this);">Type your comment here.</textarea><br /><br />
+<input type='text' name='name' class='input' value='<VINFO_NAME>' id="name" size="20"/>&nbsp;&nbsp;&nbsp; <label for="name">Name</label><br /><br />
+<input type='text' name='url' class='input' value='<VINFO_URL>' id="url" size="20"/>&nbsp;&nbsp;&nbsp; <label for="url">Website URL, if any</label><br /><br />
+<input class='input' type='text' name='email' value='<VINFO_EMAIL>' id="email" size="20"/>&nbsp;&nbsp;&nbsp; <label for="email">Email (not visible to others)</label><br /><br />
+
+<input name='vcookie' type='checkbox' id="saveinfo" value='set' checked="checked" />
+<label for="saveinfo">Save User Info</label><br /><br />
+&nbsp;&nbsp;<input type='submit' value='Add' class="comment-button"/>
+<input type='hidden' name='parent_id' value='<IMAGE_ID>' />
+<input type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+
+</form>
+</div>
+
+</div> <!-- End image notes -->
+
+<div id="image_comments">
+<IMAGE_COMMENTS>
+</div> <!--/image comments -->
+
+</div>  <!-- /inside -->
+<div class="clear"></div>
+</div> <!--/d2 -->
+
+<div id="header">
+<div class="inside">
+<h1><a href="index.php" title="Return to current image"><SITE_TITLE></a></h1>
+<ul>
+<li><a href="index.php" title="Return to Homepage">Home</a></li>
+<li><a href="<SITE_BROWSELINK>" title="Browse">Archive</a></li>
+<li><a href="index.php?x=about" title="About">About</a></li>
+
+<li class="secondary"><a href="#" onclick="Effect.toggle('image-info','BLIND'); return false;"><IMAGE_COMMENTS_NUMBER> <IMAGE_COMMENT_TEXT></a></li>
+<!-- <li><a title="Vote for Photo Evangelist Photoblog" href="http://www.coolphotoblogs.com/?do=profile&id=4121" target="_blank">*Give me a thumbs up!</a></li> -->
+</ul>
+</div> <!-- /inside -->
+</div> <!-- /header -->
+
+<div id="photobox">
+<a href="index.php?showimage=<IMAGE_PREVIOUS_ID>">
+<img src="images/<IMAGE_NAME>" alt="<IMAGE_TITLE>" title="<IMAGE_TITLE>" width="<IMAGE_WIDTH>" height="<IMAGE_HEIGHT>" id="photo" />
+</a>
+</div> <!-- /photo -->
+
+<div id="infobox">
+<div id="image-navigate" class="inside">
+<ul>
+<li class="left"><IMAGE_PREVIOUS_LINK></li>
+<li class="right" style="text-align:right"><IMAGE_NEXT_LINK></li>
+</ul>
+</div>
+</div> <!--/infobox -->
+
+
+<div id="footer">
+<ul>
+<!-- </ul>
+<ul> -->
+<li>&copy; <SITE_TITLE> All Rights Reserved</li>
+<li><ADVNCD_SITE_VISITORNUMBER> Visitors</li>
+<li><a href="admin/index.php">Login</a></li>
+<p><li><a href="http://www.pixelpost.org/extend/templates/smooth-operator-dark/">Smooth Operator Dark</a> Theme by <a href="http://mattgeorge.me">Matt George</a></li></p>
+</ul>
+</div>
+
+
+</body>
+</html>

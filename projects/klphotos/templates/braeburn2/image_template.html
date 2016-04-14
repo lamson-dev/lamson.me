@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+<!-- SITE TITLE, START ***** -->
+<title><SITE_TITLE> | <IMAGE_TITLE></title>
+<!-- ***** SITE TITLE, END -->
+
+<!-- FEED AUTODETECT, START ***** -->
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<!-- ***** FEED AUTODETECT, END -->
+
+<!-- META STUFF, START ***** -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- ***** META STUFF, END -->
+
+<!-- CSS STUFF, START ***** -->
+<link href="templates/braeburn2/braeburn2.css" rel="stylesheet" type="text/css">
+<!-- ***** CSS STUFF, END -->
+
+<!-- SCRIPT STUFF, START ***** -->
+<script src="templates/braeburn2/scripts/lib/prototype.js" type="text/javascript"></script>
+<script src="templates/braeburn2/scripts/src/scriptaculous.js" type="text/javascript"></script>
+<!-- BoxOver script is from http://boxover.swazz.org/ -->
+<script type="text/javascript" src="templates/braeburn2/scripts/boxover.js"></script>
+<script type="text/javascript">
+function changeValue(def_val, sender) {
+    if (sender.value == def_val) {
+        sender.value = "";
+    } else if (sender.value == "") {
+        sender.value = def_val;
+    }
+}
+</script>
+<!-- ***** SCRIPT STUFF, END -->
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="<IMAGE_WIDTH>" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="20" background="templates/braeburn2/images/left-shadow.png">&nbsp;</td>
+    <td bgcolor="#FFFFFF"> 
+      <!-- HEADER-NAVIGATION, START ***** -->
+	  <span class="title"><a href="index.php"><SITE_TITLE></a></span>
+      <div class="header"> <a href="index.php?showimage=<IMAGE_PREVIOUS_ID>">&laquo; 
+        prev</a> &middot; <a href="index.php">home</a> &middot;  
+        <a href="index.php?x=browse&pagenum=1">archive</a> &middot;  
+        <a href="index.php?x=about">about</a> &middot;  
+        <a href="index.php?showimage=<IMAGE_NEXT_ID>">next &raquo;</a> </div>
+<!-- ***** HEADER-NAVIGATION, END -->
+
+<!-- MAIN IMAGE, START ***** -->
+  <div class="image">
+    <a href="index.php?showimage=<IMAGE_PREVIOUS_ID>"> 
+    <img src="images/<IMAGE_NAME>" alt="<IMAGE_TITLE>" title="header=[<IMAGE_TITLE>] body=[click for previous image] fade=[on]" border="0" /> 
+    </a>
+  </div>
+<!-- ***** MAIN IMAGE, END -->  
+
+<!-- CONTENT (INCLUDING ALL EXPT. MAIN IMAGE), START ***** -->
+  <div class="content">
+
+<!-- IMAGE NAVIGATION (BELOW IMAGE), START ***** -->
+  	<div class="imgnavi"><a href="#" onclick="Effect.toggle('addcomment','BLIND'); return false;"><img src="templates/braeburn2/images/addcomment.gif" alt="add your comment" title="header=[add your comment!] body=[] fade=[off]"></a>&nbsp;
+	<a href="#" onclick="Effect.toggle('comments','BLIND'); return false;"><img src="templates/braeburn2/images/comments.gif" alt="see all comments for this image" title="header=[see all comments for this image] body=[] fade=[off]"></a>
+	&nbsp;<a href="#" onclick="Effect.toggle('imagenotes','BLIND'); return false;"><img src="templates/braeburn2/images/imagenotes.gif" alt="show/hide image text" title="header=[show/hide image text] body=[] fade=[off]"></a> 
+    </div>
+<!-- ***** IMAGE NAVIGATION (BELOW IMAGE), END -->	
+
+<!-- IMAGE TITLE, START ***** -->
+        <div class="image-title">
+          <IMAGE_TITLE> 
+          </div>
+<!-- ***** IMAGE TITLE, END -->
+
+<!-- STATISTIC STUFF FOR MAIN IMAGE, START ***** -->
+	<span id="statistics"><p>
+	<img src="templates/braeburn2/images/line.gif"><br>
+	  <img src="templates/braeburn2/images/time.gif"><IMAGE_DATE_DAY>/<IMAGE_DATE_MONTH>/<IMAGE_DATE_YEAR_FULL> at <IMAGE_TIME><br />
+      <img src="templates/braeburn2/images/category.gif"><IMAGE_CATEGORY_PAGED><br />
+      <img src="templates/braeburn2/images/tags.gif"><TAG_IMG_LIST_PAGED><br>
+      <img src="templates/braeburn2/images/statistics.gif"><IMAGE_COUNTER_VIEWS> views, <a href="#" onclick="Effect.toggle('comments','BLIND'); return false;"><IMAGE_COMMENTS_NUMBER> comments</a><br>&nbsp;<br>
+	  <img src="templates/braeburn2/images/line.gif">
+	</p>
+        </span> 
+        <!-- ***** STATISTIC STUFF FOR MAIN IMAGE, END -->
+        <!-- IMAGE COMMENTS (HIDDEN), START ***** -->
+        <span id="comments" style="display:none"><IMAGE_COMMENTS> <a href="#" onclick="Effect.toggle('addcomment','BLIND'); return false;"><img src="templates/braeburn2/images/addcommentsmall.gif" border="0" align="absmiddle"></a> 
+        <img src="templates/braeburn2/images/line.gif"><br>
+        </span>
+<!-- ***** IMAGE COMMENTS (HIDDEN), END -->
+
+<!-- ADD COMMENT FORM (HIDDEN), START ***** -->
+   <span id="addcomment" style="display:none"> 
+                      <form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'>
+                        <p> 
+                          <textarea name='message' rows='2' cols='70' onfocus="clearBox(this);">Type your comment here.</textarea>
+                        </p>
+						<input type='text' name='name' class='input' value='<VINFO_NAME>' id="name"/>
+                        <label for="name">
+                        Your Name</label>
+						<br>
+                       <input type='text' name='url' class='input' value='<VINFO_URL>' id="url"/>
+                        <label for="url">Website URL, if any</label>
+                        <br>
+						<input class='input' type='text' name='email' value='<VINFO_EMAIL>' id="email"/>
+                        <label for="email">Email (not visible to others)</label>
+                        <br>
+                        <input name='vcookie' type='checkbox' id="saveinfo" value='set' checked="checked" />
+                        <label for="saveinfo">Save User Info</label>
+						<br>
+                        
+          <input type='image' class='comment-button' value='Add' src='templates/braeburn2/images/add.gif' align="middle"/>
+                        <input type='hidden' name='parent_id' value='<IMAGE_ID>' />
+                        <input type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+                        <TOKEN> 
+                      </form>
+                    <img src="templates/braeburn2/images/line.gif"></span>
+<!-- ***** ADD COMMENT FORM (HIDDEN), END -->
+
+<!-- IMAGE NOTES (TO HIDE LINKE COMMENTS, ADD style="display:none" INTO SPAN TAG), START ***** -->
+   <span id="imagenotes"><IMAGE_NOTES></span>
+<!-- ***** IMAGE NOTES, END -->
+
+  </div>
+<!-- ***** CONTENT (INCLUDING ALL EXPT. MAIN IMAGE), END -->
+</td>
+    <td width="20" background="templates/braeburn2/images/right-shadow.png">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="20"><img src="templates/braeburn2/images/ul.png" width="20" height="70"></td>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="20"><img src="templates/braeburn2/images/ulm.png" width="20" height="70"></td>
+          <td align="center" class="um">
+		  
+		  	<!-- FOOTER, START ***** -->
+				
+            <div class="footer"> &copy; 2009 <a href="index.php"><SITE_TITLE></a> 
+              | "braeburn" by <a href="http://potd.deenee.de/">deenee</a> 
+              | <a href="index.php?x=rss"><img src="templates/braeburn2/images/feed.gif" alt="RSS feed" border="0" align="absmiddle" title="header=[RSS feed] body=[] fade=[off]"></a> 
+              <a href="admin/index.php"><img src="templates/braeburn2/images/admin.gif" border="0" align="absmiddle"></a> 
+            </div>
+			<!-- ***** FOOTER, END -->
+
+			</td>
+          <td width="20" align="right"><img src="templates/braeburn2/images/urm.png" width="20" height="70"></td>
+        </tr>
+      </table></td>
+    <td width="20"><img src="templates/braeburn2/images/ur.png" width="20" height="70"></td>
+  </tr>
+</table>
+
+</body>
+</html>

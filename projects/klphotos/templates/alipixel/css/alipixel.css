@@ -1,0 +1,646 @@
+/*
+	TEMPLATE NAME: alipixel
+	AUTHOR: Ali TowFigh
+	AUTHOR WEBSITE: http://alipixel.com
+	VERSION: 1.0
+
+*/
+html {min-height: 100.1%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #DDD;
+	background-image:url(../images/bg2.jpg);
+	background-repeat:repeat-y;
+	background-position:center top;
+	font: normal 12px/16px 'Lucida Grande', Helvetica, Tahoma, sans-serif;
+	text-align: center;
+}
+
+a:hover	 { color: #F90; }
+
+a:link, a:visited {
+	color: #888;
+	background-color: inherit;
+	text-decoration: none;
+}
+
+h6, p, ul, li {
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+ul, li {list-style: none;}
+
+h1 {
+        color: #9CC;
+	font-size: 12px;
+	display: inline;
+        text-transform: uppercase;
+}
+h2 {    
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px;
+	font-size: 16px;
+	color: #F90;
+	display: inline;
+}
+h3 {	margin: 0px 0px 8px 0px;
+        color: #F90;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+h4 {
+	margin: 0px 5px 5px 0px;
+        display: inline;
+        color: #F90;
+        font-size: 12px;
+        letter-spacing: 4px;
+	text-transform: uppercase;
+}
+h5 {
+        margin: 0px 0px 0px 0px;
+      	font-size: 12px;
+	color: #DDD;
+	letter-spacing: 1px;
+	font-size: 12px;
+        display: inline;
+}
+h6 {
+	letter-spacing:2px;
+	font-size:14px;
+	font-weight:bold;
+	color: #e58c08; 
+	text-transform: uppercase;
+}
+p {
+	margin: 0 0 4px 0px;
+	text-align: left;
+}
+img {	border: none;}
+fieldset {
+	color: #CCC;
+	background-color: inherit;
+	border: none;
+	font-size: 10px;
+}
+#menu ul a:hover, a:active, a:focus {color: #F90;}
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+.rsaquo { font-size: 12px; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+/* HEADER */
+#topborder {
+	width: 100%;
+	height: 0.3em;
+	color: inherit;
+	background-color: #800;
+}
+#header {
+	margin: 10px auto;
+	padding: 0px;
+	width: 800px;
+}
+#site-title {
+	float: left;
+	font: normal 30px Georgia, 'Gill Sans', Palatino, serif;
+	text-transform: lowercase;
+	text-align: left;
+	letter-spacing: -2px;
+	color: #999;
+	background-color: inherit;
+	padding: 1px;
+}
+#site-title a:link, #site-title a:visited {
+	color: #999;
+	background-color: inherit;
+}
+#site-title a:hover, #site-title a:focus {
+	color: #e58c08;
+	background-color: inherit;
+	text-decoration: none;
+}
+#sub-title {
+	float: right;
+	letter-spacing: 2px;
+	font-size: 10px;
+	margin: 3px 0px 0px 0px;
+	padding: 0px;
+	text-transform: none;
+}
+#menu {
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-align: right;
+	text-transform: uppercase;
+}
+#menu ul {
+	max-width:500px;
+	border-bottom: 1px dashed #888;
+        
+}
+#menu li {display: inline;}
+
+#menu a:link, #menu a:visited {
+	text-decoration: none;
+}
+
+/* FOOTER */
+
+#footer {
+	border-top: 1px dashed #999;
+	margin: 5px auto 10px auto;
+	padding: 5px 0px;
+	width: 800px;
+	color: #888;
+	background-color: inherit;
+	font-size: 10px;
+	clear: both;
+}
+#footer a:link, #footer a:visited {
+        display: inline;
+        text-align: center;
+        color: #C1C1C1; 
+	background-color: inherit;
+}
+#footer a:hover {
+        display: inline;
+        text-align: center;
+	color: #e58c08; 
+	background-color: inherit;
+}
+
+.loadtime {
+	text-transform: uppercase;
+	font-size: 9px;
+}
+
+
+/* PAGE */
+
+#page {
+	margin: 0px auto;
+}
+
+#page p, #page ul {
+	margin: 0px 25px 20px 0px;
+}
+
+
+/* IMAGE */
+
+#image-container {
+	width: 800px;
+}
+
+#image-nav-links {
+	margin: 0px;
+	padding: 0px 0px 4px 0px;
+	width: 800px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+#image-nav-prevlink {
+	float: left;
+}
+
+#image-nav-nextlink {
+	float: right;
+}
+
+#image-border {
+	border: 1px solid #666;
+	width: 800px;
+	position: relative;
+	margin: 0px auto;
+	background: transparent url(../images/indicator-big-loader.gif) no-repeat 50% 50%;
+}
+
+#image-info {
+	margin: 8px 5px 0px 5px;
+	padding: 0px 0px;
+
+	text-align: left;
+	text-transform: uppercase;
+	color: #888;
+	background-color: inherit;
+}
+
+#image-nav-overlay {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+
+#image-nav-overlay a {
+	outline: none;
+	line-height: 0px;
+}
+
+#image-nav-prevoverlay, #image-nav-nextoverlay {
+	width: 49.9%;
+	height: 100%;
+	/* Trick IE into showing hover */
+	background: transparent url(../images/blank.gif) no-repeat;
+}
+
+#image-nav-prevoverlay {
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+
+#image-nav-nextoverlay {
+	top: 0px;
+	right: 0px;
+	float: right;
+}
+
+#image-nav-prevoverlay:hover,
+#image-nav-prevoverlay:visited:hover,
+#image-nav-prevoverlay:focus {
+	background: url(../images/p_prev.png) center left no-repeat;
+	cursor: pointer;
+}
+
+#image-nav-nextoverlay:hover,
+#image-nav-nextoverlay:visited:hover,
+#image-nav-nextoverlay:focus {
+	background: url(../images/p_next.png) center right no-repeat;
+	cursor: pointer;
+}
+
+.image-title {
+        margin-left: 5px;
+	font-size: 12px;
+	color: #CCC;
+	background-color: inherit;
+	float: left;
+}
+
+.image-date {
+        margin-right: 5px;
+	font-size: 10px;
+	text-align: right;
+	float: right;
+        color: #888;
+}
+
+.image-comment {
+        margin-right: 1px;
+	font-size: 10px;
+	text-align: right;
+	float: right;
+        color: #888;
+}
+.image-comment a:hover {
+        color: #e58c08;
+}
+
+.image-rate {
+        margin-left: -3px;
+	text-align: left;
+        float: left;
+}
+
+/* COMMENTS */
+
+#comments-container {
+	color: #E9E9E9;
+	background-color: #2D2D2D;
+	width: 770px;
+	text-align: left;
+	padding: 15px;
+	margin-top: 0px;
+	filter:alpha(opacity=65);
+	-moz-opacity:.65;
+	opacity:.65;
+	border: 1px double #999;
+
+}
+
+#comments-container h3 {
+	padding-bottom: 3px;
+}
+
+/* COMMENTS - IMAGE NOTES */
+
+#image-notes {
+	float: left;
+	width: 39%;
+	margin-bottom: 0px;
+}
+
+#image-notes li {
+	margin: 0px 0px 0px 5px;
+}
+
+
+#info {
+	margin: 0px 0px 0px 0px;
+        border-bottom: 1px dotted #999;
+}
+
+#info li {
+	padding: 5px 0px 0px 5px;
+        color: #EEE;
+}
+
+#info ul {
+	margin-bottom: 5px;
+}
+
+#info li a:hover {
+	color: #e58c08;
+}
+
+#info li a {
+	color: #ACACAC;
+}
+
+#rgbhistograme {
+	margin: 10px 0px 0px 0px;
+        border-bottom: 1px dotted #999;
+}
+
+#rgbhistograme ul {
+	margin-bottom: 5px;
+}
+
+#rgbhistograme li {
+	padding: 5px 0px 0px 8px;
+}
+
+#exif {
+	margin: 10px 0px 0px 0px;
+        border-bottom: 1px dotted #999;
+}
+
+#exif ul {
+	margin-bottom: 5px;
+}
+
+#exif li {
+	padding: 5px 0px 0px 5px;
+}
+
+#googlemaplink {
+	margin: 10px 0px 0px 0px;
+        border-bottom: 1px dotted #999;
+}
+
+#googlemaplink ul {
+	margin-bottom: 5px;
+}
+
+#googlemaplink li {
+	padding: 5px 0px 0px 5px;
+}
+
+#googlemaplink li a:hover {
+	color: #e58c08;
+}
+
+#googlemaplink li a {
+        color: #979797;
+}
+
+#votecool {
+        margin: 10px 0px 0px 0px;
+	font-weight: normal;
+}
+.votecool {
+	font-size: 10px;
+        color: #9CC;
+}
+
+#votecool ul {
+	margin-bottom: 5px;
+}
+
+#votecool li {
+        padding: 5px 5px 0px 0px;
+}
+
+
+/* USER COMMENTS */
+
+#image-comments {
+	float: right;
+	width: 58%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	border-left: 1px solid #999;
+}
+
+#comments li {
+	margin: 10px 0px 15px 0px;
+        padding: 0px 0px 0px 10px;
+}
+
+#comments li a:hover {
+	color: #e58c08;
+}
+
+/* COMMENT FORM */
+
+#addcomment {
+	padding: 15px 0px;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	text-align: left;
+}
+
+.input {
+	width: 45%;
+	border: 1px solid #9CC;
+	color: #F2F2F2;
+	background-color: #666;
+	padding: 4px;
+	margin: 0px 0px 8px 0px;
+}
+
+#addcomment textarea {
+	width: 95%;
+	height: 150px;
+	border: 1px solid #9CC;
+	color: #F2F2F2;
+	background-color: #666;
+	padding: 4px;
+	margin: 0px 0px 8px 0px;
+}
+
+.comment-button {
+	border: 3px double #CCC;
+	font-size: 10px;
+	color: #F2F2F2;
+	background-color: #666;
+	text-transform: uppercase;
+	padding: 3px;
+	margin: 8px 0px 0px 0px;
+}
+
+/* COMMENT THANKS */
+
+#thanks {
+	text-align: center;
+}
+
+#thanks p {
+	font-weight: bold;
+	font-size: 10px;
+	padding: 4px 0px;
+	margin: 0px;
+}
+
+#thanks a:hover {
+	color: #F90; 
+}
+#thanks a {
+	font-weight: bold;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#thanks li {
+        float: right;
+	display: inline;
+	padding: 0px 0px 0px 0px;
+}
+
+#thanks li.last {
+	padding: 0px;
+}
+
+
+/* google */
+
+#google-container {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#google-container ul {
+	padding-top: 10px;
+}
+
+#google-container li {
+	margin-left: 20px;
+}
+
+
+/* ABOUT */
+
+#about-container {
+	padding-top: 20px;
+}
+
+#photo-self {
+	border: 1px solid #888;
+	margin: 0px;
+	padding: 2px;
+}
+
+#about-container #photo-self {
+	padding: 4px;
+	margin: 2px 18px;
+}
+
+/* COLUMNS */
+
+#column1, #column2, #column3 {
+	width: 220px;
+	text-align: left;
+	float: left;
+}
+
+#column1 {
+	margin-left: 80px;
+}
+
+#column2 {
+	margin-left: 50px;
+}
+
+#column1 a:hover {color: #F90;}
+
+#column2 a:hover {color: #F90;}
+
+#column3 a:hover {color: #F90;}
+
+#column3 {margin-left: 10px;}
+
+.column4 {
+        width: 800px;
+	font-size: 10px;
+	text-align: center;
+	color: #FFF;
+}
+
+.column4 a, a:link, a:visited {color: #888;}
+
+.column4 a:hover {color: #F90;}
+
+.column4 h1 {color: #F90;}
+
+#photo-self {
+	background-color: #F9F9F9;
+	border: 1px solid #E0E0E0;
+	margin: 5px 0px;
+	padding: 6px;
+}
+
+/* BROWSE */
+
+#browse-container {
+	float: left;
+	width: 750px;
+	padding: 20px 0;
+	margin: 0px;
+	text-align: left;
+}
+
+#category-container { /* WIDTH = 210px */
+	float: left;
+	text-align: left;
+	padding: 0px 5px;
+}
+#category-container   a:hover	 { color: #F90; }
+
+#category-container ul {
+	margin: 0px;
+	padding: 0px 2px 15px 2px;
+}
+
+#category-container li {
+	padding: 2px 0px;
+	border-bottom: 1px dotted #999;
+}
+
+#thumbnail-container {
+	float: right;
+	width: 510px;
+}
+
+a img.thumbnails {opacity: 0.69;}
+
+a:hover img.thumbnails, a:focus img.thumbnails {opacity: 1.0;}

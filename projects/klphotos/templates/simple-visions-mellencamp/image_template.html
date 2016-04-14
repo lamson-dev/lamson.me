@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description"  content="<SITE_TITLE> &bull; <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+<title><SITE_TITLE> | <IMAGE_TITLE></title>
+<link rel="stylesheet" type="text/css" href="templates/simple-visions-mellencamp/style.css" title="light" />
+</head>
+
+<body>
+
+<div id="content">
+<div id="nav">
+
+<div class="navbar">
+
+<div class="header">
+<a href="index.php" title="latest image"><SITE_TITLE></a>
+</div>
+
+<div class="navmenu">
+<IMAGE_PREVIOUS_LINK>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="index.php" title="latest image">latest</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+<IMAGE_NEXT_LINK>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="<SITE_BROWSELINK>" title="archives">Archives</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="index.php?x=about" title="about">About + Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="index.php?x=rss" title="RSS 2.0 feed">RSS</a>/<a href="index.php?x=atom" title="ATOM feed">Atom</a>
+</div>
+
+</div>
+
+</div>
+
+<div id="calendar"><SITE_CALENDAR></div>
+
+<div id="picture">
+<a href="index.php?showimage=<IMAGE_PREVIOUS_ID>">
+<p class="primary"><img class="photobox" src="images/<IMAGE_NAME>" title="<IMAGE_TITLE> : Click to View Previous Image" alt="<IMAGE_TITLE>" border="0" width="<IMAGE_WIDTH>" height="<IMAGE_HEIGHT>" /></a>
+</div>
+
+<div id="descr-main">
+  <table width="740" border="0">
+  <tr>
+    <td>
+<h3><IMAGE_TITLE></h3>
+<p><COMMENT_POPUP> (<IMAGE_COMMENTS_NUMBER>)</p>
+<p><em>posted: <IMAGE_DATETIME></em></p>
+<div id="page-notes"><p><IMAGE_NOTES></p></div><br /><br />
+	<div id="page-exif">
+	<p>EXIF DATA:<br />
+	<LANG_CAMERA_MODEL><br />
+	<LANG_FOCAL_LENGTH><br />
+	<LANG_EXPOSURE_TIME><br />
+	<LANG_APERTURE><br />
+	<LANG_ISO><br /></p>
+	</div>
+</td>
+  </tr>
+</table>
+</div>
+
+<div id="copyright">
+Images &copy;2006 YOUR NAME HERE &bull; All rights reserved.</div>
+
+</div>
+
+<br clear="all" />
+
+</body>
+</html>

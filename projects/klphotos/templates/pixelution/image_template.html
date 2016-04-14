@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!--
+		Pixelution Template by Kevin Crafts - http://blog.kevincrafts.com
+	-->
+	<head>
+		<title><IMAGE_TITLE> &bull; <SITE_TITLE></title>
+		<!-- Link for ATOM feed autodiscovery -->
+		<ATOM_AUTODETECT_LINK>
+		<!-- Link for RSS feed autodiscovery -->
+		<RSS_AUTODETECT_LINK>
+		<!-- META -->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+		<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="stylesheet" type="text/css" href="templates/pixelution/css/pixelution.css"  />
+		<script type="text/javascript" src="templates/pixelution/js/jquery-1.2.6.pack.js"></script>
+		
+        <link rel="stylesheet" href="templates/pixelution/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+		<script src="templates/pixelution/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a[rel^='prettyPhoto']").prettyPhoto({allowresize: false, showTitle: false, theme: 'dark_square'});
+				$("a.zoom").append("<span></span>");
+				$("a.zoom span").css("opacity", .65);
+				$("ul#nav ul").css("opacity", .85);
+				$('ul#nav > li').hover(
+					function() { $('ul', this).css('display', 'block'); },
+					function() { $('ul', this).css('display', 'none'); 
+				});
+				$("#photos a").hover(function(){
+					$("img", this).fadeTo(.2, .70, function() { $(this).fadeTo("normal", 1); });
+				}, function(){
+				});
+				$("#commentLink").click(function(){
+					$("#comments").slideToggle();
+					return false;
+				});
+				$("#closecomments").click(function(){
+					$("#comments").slideUp();
+					return false;
+				});
+			});
+		</script>
+       
+		<!--[if lt IE 7]>
+		<script type="text/javascript" src="templates/pixelution/js/DD_belatedPNG-min.js"></script>
+       	<script type="text/javascript">
+			DD_belatedPNG.fix('.pp_left,.pp_right,a.pp_close,a.pp_arrow_next,a.pp_arrow_previous,.pp_content,.pp_middle');     
+		</script>
+		<![endif]-->
+
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+
+	<div id="siteTitle">
+		<a href="<SITE_URL>"><SITE_TITLE></a>
+	</div>
+	
+	<div id="menu">
+		<ul id="nav">
+			<li><a href="<SITE_URL>">Home</a></li>
+			<li><a href="index.php?x=browse&pagenum=1" id="browseLink">Browse</a>
+				<PIXELUTION_CATEGORIES_MENU>
+			</li>
+			<li><a href="index.php?x=about" id="aboutLink">About</a></li>
+			<li><a href="index.php?x=rss">RSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="wrap">
+<div id="mainBody">
+	<div id="comments">
+		<div id="commentList"><div class="content">
+			<a href="#" id="closecomments">close</a>
+			<h3>What Other People Said</h3>
+			<IMAGE_COMMENTS>
+		</div></div>
+		<div id="commentForm"><div class="content">
+			<h3>Say Something</h3>
+			<form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'  >
+						<label for="name">Name</label><br />
+						<input type='text' name='name' class='formfield' value='<VINFO_NAME>' id="name"/><br /><br />
+						<label for="email">Email (kept private)</label><br />
+						<input class='formfield' type='text' name='email' value='<VINFO_EMAIL>' id="email"/><br /><br />
+						<label for="url">URL</label><br />
+						<input type='text' name='url' class='formfield' value='<VINFO_URL>' id="url"/><br /><br />
+						<label for="photocomment">Comment</label><br />
+						<textarea name="message" rows="4" cols="24" onfocus="clearBox(this);" class="formfield" id="photocomment"></textarea><br /><br />
+						<input type='submit' value='Add Comment' class="formbutton"/>
+						<input type='hidden' name='parent_id' value='<IMAGE_ID>' />
+						<input type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+						<input type="hidden" name="withthankyou" value="no" />
+                        <TOKEN>
+					</form>
+		</div></div>
+	</div>
+
+	<div id="photoWrapper">
+		
+				
+		<a href="images/<IMAGE_NAME>" rel="prettyPhoto" class="zoom"><img src="images/<IMAGE_NAME>" alt="<IMAGE_TITLE>" id="photo" style="width:<PIXELUTION_IMAGE_WIDTH>px; height:<PIXELUTION_IMAGE_HEIGHT>px;" /></a>
+	
+	</div>
+			
+	<div id="details">
+	
+		<h1><IMAGE_TITLE></h1>
+	
+		<p>Posted: <IMAGE_DATE_MONTH>/<IMAGE_DATE_DAY>/<IMAGE_DATE_YEAR><br />
+		<PIXELUTION_IMAGE_CATEGORIES><br />
+		Comments: <a href="#" id="commentLink"><IMAGE_COMMENTS_NUMBER> <IMAGE_COMMENT_TEXT></a> &bull; <a href="http://twitter.com/home?status=Check out this photo -  <SITE_URL>index.php?showimage=<IMAGE_ID>" title="Send this page to Twitter!" target="_blank">Tweet This!</a></p>
+		<!--<h2>Description</h2>-->
+		<p><IMAGE_NOTES></p>
+		
+				<p id="prevnext"><IMAGE_PREVIOUS_LINK><IMAGE_NEXT_LINK></p>
+
+	</div>
+	
+	<div style="clear:both;"></div>
+		
+	<div id="photos">
+		
+		<h3>Recent Photos</h3>
+				<IMAGE_THUMBNAIL_ROW>			
+				
+	</div>
+
+</div>
+
+<!-- The main column ends  -->
+
+<!-- begin footer -->
+
+<div style="clear:both;"></div>
+
+</div>
+
+<div id="footerWrapper">
+
+	<div id="footer">
+	
+		<div class="content">
+			<p>&copy; <a href="<SITE_URL>"><SITE_TITLE></a> &bull; Template design by <a href="http://www.kevincrafts.com/">Kevin Crafts</a></p>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<script type="text/javascript" src="templates/theworldin35mm/js/mootools-core-1.3.1-full-nocompat-yc.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function thumbLoaded(thumbid, thumbborderid)
+{
+	var fadeFx = new Fx.Tween(thumbid,
+	{
+		property: 'opacity',
+		duration: 400,
+		transition: Fx.Transitions.Expo.easeInOut
+	});
+	
+	document.id(thumbid).store('thumbborderid', thumbborderid);
+	
+	document.id(thumbid).setStyle('opacity', 0);
+	document.id(thumbid).setStyle('visibility', 'visible');
+	
+	fadeFx.start(1).chain(function()
+	{
+		document.id(this.element.retrieve('thumbborderid')).setStyle('background-image', 'none');
+	});
+};
+
+function fadeThumb(thumbid, amount)
+{
+	document.id(thumbid).setStyle('opacity', amount);
+}
+//]]>
+</script>
+<div class="page-wrapper">
+	<div id="browse-nav-container">
+		<h4>Archive&nbsp;<span class="rsaquo">&rsaquo;</span>&nbsp;<35MM_CURRENT_ARCHIVE></h4>
+		<35MM_CATEGORY_LINKS_AS_LIST>
+		<h4>View By Month</h4>
+		<35MM_MONTHLY_ARCHIVE_AS_LIST>
+		<h4>View By Tag</h4>
+		<35MM_TAG_LINKS_AS_LIST>
+	</div>
+	<div id="thumbnail-nav-container" style="width: <35MM_THUMBNAILS_WIDTH>px;">
+		<div id="thumbnail-container">
+			<35MM_THUMBNAILS>
+		</div>
+		<div id="paging-nav-container">
+			<35MM_THUMBNAILS_PAGES_FLICKR>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>

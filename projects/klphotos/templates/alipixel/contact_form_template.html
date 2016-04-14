@@ -1,0 +1,27 @@
+<div id="google-container"><img src="templates/alipixel/images/bar_top.png" width="160" height="29" border="0"/><br /><br />
+	<h6><em>contact form</h6></em>
+  <br  />
+    <form style="text-align:center;"  method="post" action="templates/alipixel/sendeail.php">
+<em>Please Send Private Message</em><p>
+  <input type="hidden" name="ip" value="<?php echo $ipi ?>" />
+  <input type="hidden" name="httpref" value="<?php echo $httprefi ?>" />
+  <input type="hidden" name="httpagent" value="<?php echo $httpagenti ?>" />
+
+<TABLE width="170" BORDER="0" align="center" CELLPADDING="0" CELLSPACING="0">
+  <tr>
+  <td width="170" align="left">name<input name="visitor" type="text" class="formfield" style="border:solid 1px #9CC; background:#666" title=" your full name" size="25"></td>
+  </tr>
+    <tr>
+  <td width="170" align="left">e-mail<input style="border:solid 1px #9CC; background:#666"type="text" class='formfield' title="your e-mail address (kept private)" name="visitormail" size="25" /></td>
+  </tr>
+    <tr>
+    <td width="170" align="left">message<textarea name="notes" cols="19" rows="5" class='bg_color'style="border:solid 1px #9CC; background:#666" title="your message"></textarea></td>
+  </tr>
+    <tr>
+  <td width="170" align="left"><br /><input style="border:1px solid #9CC;color:#666"type="submit" class='formfield2' value="Send" /> &nbsp;<input style="border:1px solid #9CC;color:#666"type="reset" class='formfield2' value="Clear" />
+   
+  </td>
+  </tr>
+  </table> 
+</form><br /><br />
+</div>

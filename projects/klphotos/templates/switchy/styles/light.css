@@ -1,0 +1,164 @@
+* {
+	outline:none;
+	}
+body {
+	margin:0;
+	padding:0;
+	font-family:Tahoma, Geneva, Verdana, Helvetica, Sans-serif;
+	background-color:#EFEFEF;
+	}
+.container {
+	width:100%;
+	font-size:small;
+	color:#333;
+	}
+a:link, a:visited {
+	color:#000;
+	/*background-color:#444;*/
+	text-decoration:none;
+	}
+a:hover {
+	color:#FFF;
+	background-color:#222;
+	}
+table#outside {
+	background-color:#DFDFDF;
+}
+h1 {
+	margin:0;
+	padding:0 10px;
+	line-height:60px;
+	font-size:130%;
+	}
+h1 a:link, h1 a:visited, h1 a:hover {
+	color:#444;
+	text-decoration:none;
+	background:none;
+	}
+table#banner {
+	background-color:#DFDFDF;
+	}
+table#banner td.nav a:link, td.nav a:visited {
+	text-decoration:none;
+	padding:0 10px;
+	border-right:1px solid #AAA;
+	color:#444;
+	line-height:60px;
+	display:block;
+	background-color:#DDD;
+	font-size:90%;
+}
+table#banner td.nav a:hover {
+	background-color:#EFEFEF;
+	color:#333;
+}
+#hphoto, #vphoto {
+	display:none;
+	}
+.photocell {
+	background-color:#FFF;
+	background-image:url(../images/loadingW.gif);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.photo {
+	display:none;
+	}
+.sidecol {
+	width:250px; 
+	background-color:#AAA;
+	}
+.details {
+	padding:20px;
+	background-color:#AAA;
+	font-size:85%;
+	line-height:150%;
+	}
+h2 {
+	margin:0;
+	padding:0;
+	font-size:120%;
+	}
+h3 {
+	font-size:110%;
+	}
+	
+.comment ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+.comment ul li {
+	display:none;
+	}	
+.viewAll {
+	display:none;
+	}	
+#footer {
+	padding:20px;
+	font-size:90%;
+	background-color:#DDD;
+	}
+	
+	
+/* COMMENT TEMPLATE */
+
+#commentTop {
+	padding:8px 20px;
+	background-color:#AAA;
+}
+#commentMid {
+	
+}
+#commentMid ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+#commentMid ul li {
+	padding:6px 20px;
+	}	
+.odd {
+	background-color:#DFDFDF;
+	}
+.even {
+	background-color:#CFCFCF;
+}
+#commentBottom {
+	padding:8px 20px;
+	}
+#commentBottom input.input, #commentBottom textarea {
+	background-color:#FFF;
+	color:#111;
+	padding:4px;
+	border:1px solid #AAA;
+	}
+
+/* ARCHIVE */
+
+table td#thumbs {
+	background-color:#CCC;
+}
+table td#thumbs a:link, table td#thumbs a:visited {
+	border:2px solid #AAA;
+	display:block;
+	float:left;
+	margin:12px;
+}
+table td#thumbs a:hover {
+	border:2px solid #EEE;
+}
+table td#thumbs a img {
+	border:none;
+	}
+td.sidecol ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+td.sidecol ul li {
+	margin-bottom:4px;
+}
+#text {
+	background-color:#CCC;
+	}

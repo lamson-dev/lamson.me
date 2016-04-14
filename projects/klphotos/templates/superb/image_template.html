@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title><SITE_TITLE> - <SUB_TITLE></title>
+<!-- Link for FEED autodiscovery -->
+<FEED_AUTO_DISCOVERY>
+<!-- META -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="templates/superb/styles/superb.css" title="main" />
+<!-- SCRIPTS -->
+<script type="text/javascript" src="templates/superb/scripts/jquery.js"></script>
+<script type="text/javascript" src="templates/superb/scripts/jquery.corner.js"></script>
+<script type="text/javascript" src="templates/superb/scripts/jquery.superbgimage.min.js"></script>
+<script type="text/javascript" src="templates/superb/scripts/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript">
+<!--
+    $(function() {
+
+        // initialize SuperBGImage
+        $('#thumbs').superbgimage().hide();
+
+        $('#exifbox').corner("bottom keep");
+        $('#exifboxtitle').corner("top");
+        $('#title').corner("top");
+        $('#main').corner("bottom");
+        $('#header').corner("bottom");
+        $('#header').fadeTo('slow',0.65);
+
+
+        $("#left").click(function () {
+          window.location='./index.php?showimage=<IMAGE_PREVIOUS_ID>';
+        });
+
+        $("#right").click(function () {
+          window.location='./index.php?showimage=<IMAGE_NEXT_ID>';
+        });
+
+ 
+        $(nav);
+
+        $(window).resize(function() {
+          $(nav);
+        });
+
+        $('#mainwrapper').draggable();
+        $('#exifwrapper').draggable();
+
+    });
+
+    function nav() {
+        var windowheight = ( $(window).height() - 40);
+        var windowwidth = $(window).width();
+        $('#wrap').css('height',windowheight + "px");
+        $('#right').css('width',Math.floor(windowwidth / 2) + "px");
+        $('#left').css('width',Math.floor(windowwidth / 2) +"px");
+    }
+
+    function prevbox() {
+      if("<IMAGE_ID>" != "<IMAGE_PREVIOUS_ID>") {
+      document.write('<div id="left"></div>');
+      }
+    }
+
+    function nextbox() {
+      if("<IMAGE_ID>" != "<IMAGE_NEXT_ID>") {
+        document.write('<div id="right"></div>');
+      }
+    }
+
+    function showexif() {
+            $('#exifbox').css({'opacity' : 0.9 });
+            $('#exifbox').fadeToggle();
+            $('#exifboxtitle').css({'opacity' : 0.65 });
+            $('#exifboxtitle').fadeToggle();
+    }
+
+    function showinfo() {
+            $('#main').css({'opacity' : 0.9 });
+            $('#main').fadeToggle();
+            $('#title').css({'opacity' : 0.65 });
+            $('#title').fadeToggle();
+    }
+
+
+
+        
+
+-->
+</script>
+</head>
+
+<body>
+
+<div id="header">
+  <div id="menu"><a href="#" onclick='showinfo(); return false;'><span class="showcommentcount"><IMAGE_COMMENTS_NUMBER></span>&nbsp;Comments</a>&nbsp;&middot;&nbsp;<a href='#' onclick='showexif(); return false;'>Exif</a>&nbsp;&middot;&nbsp;<a href="index.php">Current</a>&nbsp;&middot;&nbsp;<a href="?x=browse">Browse</a>&nbsp;&middot;&nbsp;<a href="?x=about">About</a></div><!-- menu -->
+</div><!-- header -->
+
+<!-- page navigation -->
+<div id="wrap">
+<script type="text/javascript">prevbox();</script>
+<script type="text/javascript">nextbox();</script>
+</div><!-- wrap -->
+
+<div id="exifwrapper">
+<div id="exifboxtitle"><p class="exiftitle">&nbsp;exif information</p></div>
+<div id="exifbox">
+  <div id="exif">
+  Camera: <span class="exifitem"><EXIF_CAMERA_MODEL></span><br />
+  Lens: <span class="exifitem"><XMPMETA_LENS></span><br />
+  Focal lenght: <span class="exifitem"><EXIF_FOCAL_LENGTH></span><br />
+  Aperture: <span class="exifitem"><EXIF_APERTURE></span><br />
+  Shutter: <span class="exifitem"><EXIF_EXPOSURE_TIME></span><br />
+  ISO: <span class="exifitem"><EXIF_ISO></span><br />
+  Captured: <span class="exifitem"><EXIF_CAPTURE_DATE></span><br />
+  </div><!-- exif -->
+</div><!-- exifbox -->
+</div><!-- exifwrapper -->
+
+<div id="mainwrapper">
+<div id="title"><p class="showtitle">&nbsp;<IMAGE_TITLE></p></div><!-- title -->
+<div id="main">
+  <div id="scroll">
+  <div id="smallimg"><img width='200' class="smallimg" src="images/<IMAGE_NAME>" alt="small image" /></div>
+  <div id="notes">
+  <p class="shownotes"><IMAGE_NOTES></p></div><!-- notes -->
+
+  <!-- <div id="comments"><span class="showcomments"><IMAGE_COMMENTS></span></div> -->
+  <div id="comments"><h5>comments</h5><IMAGE_COMMENTS></div>
+
+  <div id="addcomment">
+  <h5>leave a comment</h5>
+  <form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'>
+  <label for="name">Name</label><br />
+  <input type='text' name='name' class='input' value='<VINFO_NAME>' id="name" /><br />
+  <label for="url">Website URL, if any</label><br />
+  <input type='text' name='url' class='input' value='<VINFO_EMAIL>' id="url" /><br />
+  <label for="email">Email: (not visible to others)</label><br />
+  <input type='text' name='email' class='input' value='<VINFO_URL>' id="email" /><br />
+  <label >Comment</label><br />
+  <textarea class='input' name='message' cols='0' rows='2'></textarea><br />
+  <input type='submit' value='Say it!' class="comment-button" />
+  <input class="parent_id" type='hidden' name='parent_id' value='<IMAGE_ID>' />
+  <input class="parent_name" type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+  </form>
+  </div><!-- addcomment -->
+  </div><!-- scroll -->
+</div><!-- main -->
+</div><!-- mainwrapper -->
+
+
+
+<div id="thumbs">
+<a href="images/<IMAGE_NAME>" title="<IMAGE_TITLE>">1</a>
+</div>
+
+</body>
+</html>

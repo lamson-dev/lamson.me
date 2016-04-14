@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+body {
+  background-color: #CCC;
+  text-align: center;
+}
+
+canvas {
+  background-color: #FFF;
+  border: 1px solid #999;
+=======
+body {
+  background-color: #CCC;
+  text-align: center;
+}
+
+canvas {
+  background-color: #FFF;
+  border: 1px solid #999;
+>>>>>>> ac9dd56d737d9347102bf97ea5da025b6ebcf909
+}

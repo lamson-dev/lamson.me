@@ -1,0 +1,123 @@
+<script type="text/javascript" src="<SITE_URL>templates/alipixel/js/scriptaculous/prototype.js"></script>
+<script type="text/javascript" src="<SITE_URL>templates/alipixel/js/scriptaculous/scriptaculous.js"></script>
+<script type="text/javascript" src="<SITE_URL>templates/alipixel/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="<SITE_URL>templates/alipixel/js/fade.js"></script>
+<script type="text/javascript">
+function fadeCallback() {
+	document.getElementById('image-border').style.backgroundImage = 'none';
+	
+	if (<IMAGE_PREVIOUS_ID> != <IMAGE_ID>) {
+		document.getElementById('image-nav-prevlink').style.visibility = 'visible';
+		document.getElementById('image-nav-prevoverlay').style.display = 'block';
+	}
+	if (<IMAGE_NEXT_ID> != <IMAGE_ID>) {
+		document.getElementById('image-nav-nextlink').style.visibility = 'visible';
+		document.getElementById('image-nav-nextoverlay').style.display = 'block';
+	}
+}
+
+window.onload = function() {
+	// update title to include image title
+	document.title = '<IMAGE_TITLE> | ' + document.title;
+	 
+	var img = document.getElementById('photo');
+	
+	img.onload = function(evt) {
+		// using custom fader since Effect.Appear() from scriptaculous
+		// lacks a few things:
+		// (1) callback function to do something when appear effect completes
+		// (2) work with visibility style instead of display
+		fade(img, 0.5, 10, fadeCallback);
+	}
+	
+	// set img src
+	img.src = '<SITE_URL>images/<IMAGE_NAME>';
+};
+
+// clears default value out of comment box
+function clearBox(box) {
+	if(box.value == box.defaultValue) {
+		box.value = "";
+	}
+}
+</script>
+
+<div id="image-container">
+	<div id="image-nav-links">
+		<div id="image-nav-prevlink">
+		<div class="image-title"><b><IMAGE_TITLE></b></div>
+		</div>
+		<div id="image-nav-nextlink">
+		<div class="image-date"><IMAGE_DATE></div>	
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="image-border" style="width: <IMAGE_WIDTH>px; height: <IMAGE_HEIGHT>px;">
+		<img id="photo" src="<SITE_URL>templates/alipixel/images/blank.gif" alt="<IMAGE_TITLE>" title="<IMAGE_TITLE>" style="width: <IMAGE_WIDTH>px; height: <IMAGE_HEIGHT>px; visibility: hidden;" />
+		<div id="image-nav-overlay" style="width: <IMAGE_WIDTH>px; height: <IMAGE_HEIGHT>px;">
+			<a href="<SITE_URL>index.php?showimage=<IMAGE_PREVIOUS_ID>" id="image-nav-prevoverlay" style="display: none;"></a>
+			<a href="<SITE_URL>index.php?showimage=<IMAGE_NEXT_ID>" id="image-nav-nextoverlay" style="display: none;"></a>
+		</div>
+	</div>
+<div id="image-info">
+		<div class="image-rate"><AJAX_RATE img_width="14px"></div>
+		<div class="image-comment"><a href="javascript:void(0);" onclick="Effect.toggle('comments-container','blind',{ duration: 0.75 }); return false;">Info + Comments (<IMAGE_COMMENTS_NUMBER>)</a></div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div id="comments-container" style="display: none;">
+	<div>
+		<div id="image-notes">
+		<div id="info">
+		<h4><em>Info</em></h4>
+		<ul><li><h1><strong>Notes:</strong></h1>&nbsp;<IMAGE_NOTES><br /><CUSTOM_FIELDS><br />
+		<IMAGE_CATEGORY><br /><h1><strong>Tags:</strong></h1>&nbsp;<TAG_IMG_LIST></li></ul>               
+</div>            			        
+                <div id="rgbhistograme">
+                <h4><em>RGB Histogram</em></h4>
+		<ul><li><RGBHISTOGRAM></li></ul>
+</div>
+                <div id="exif">
+		<h4><em>EXIF</em></h4>
+		<ul><li><EXIF_CAMERA_MODEL>&nbsp;<h1><strong>|</strong></h1>&nbsp;<EXIF_FOCAL_LENGTH>&nbsp;<h1><strong>|</strong></h1>&nbsp;<EXIF_APERTURE>&nbsp;<h1><strong>|</strong></h1>&nbsp;<EXIF_EXPOSURE_TIME>&nbsp;<h1><strong>|</strong></h1>&nbsp;ISO:&nbsp;<EXIF_ISO></li></ul>
+</div>
+                <div id="googlemaplink">
+            	<h4><em>Google Map</em></h4>
+                <ul><li><h1>[</h1>&nbsp;<GOOGLEMAP_LINK>&nbsp;<h1>]</h1></li></ul>
+</div>
+
+<div id="votecool">
+<a href="http://vote.photoblogawards.com/photoblog.php?title=alipixel"target="_blank"><img height="50" width="150" border="0" alt="coolphotoblogs.com" src="http://vote.photoblogawards.com/logo_2.gif"/></a><br /><ul><li class="votecool">If you've enjoyed my photos, I would greatly appreciate your vote for the 2009 Photoblog Awards.</li></ul></div>
+
+</div>
+
+<div id="image-comments">
+			<div id="comments">
+			<h4><em>Comments</em></h4>
+                        <REPLYABLE_COMMENTS>
+			</div>
+
+			<div id="addcomment">
+<form method="post" action="index.php?x=save_comment" name='commentform' accept-charset='UTF-8'>
+<fieldset>
+<input class="input" type="text" name="name" value="<VINFO_NAME>" id="name" />&nbsp;&nbsp;&nbsp;Name<br />
+<input class="input" type="text" name="email" value="<VINFO_EMAIL>" id="email" />&nbsp;&nbsp;&nbsp;Email (kept private)<br />
+<input class="input" type="text" name="url" value="<VINFO_URL>" id="url" />&nbsp;&nbsp;&nbsp;Website (optional)<br />
+<textarea name="message" rows="8" cols="40" title="your comment"class="formfield" onfocus="clearBox(this);">Type your comment here.</textarea><br /><CAPTCHA>
+<input name="vcookie" type="checkbox" id="saveinfo" value="set" checked="checked" />&nbsp;Save User Info<br />
+<input type="submit" value="Submit" class="comment-button" />
+<input type="hidden" name="parent_id" value="<IMAGE_ID>" />
+<input type="hidden" name="parent_name" value="<IMAGE_NAME>" />
+<input type="hidden" name="withthankyou" value="no" />
+					</fieldset>
+				</form>
+			</div>
+<div id="thanks"> Thanks for visiting. I really appreciate your support and comments!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="javascript:void(0);" onclick="Effect.toggle('comments-container','blind',{ duration: 0.75 }); return false;">[CLOSE]</a>
+</div>
+</div>
+</div>
+<div class="clear">
+</div>
+</div>

@@ -1,0 +1,32 @@
+/* 
+	Son Nguyen
+	
+	css style sheet for fifteen.html											
+*/
+
+body {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;	
+}
+
+#puzzlearea {
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	position: relative;
+}
+
+#puzzlearea div {
+	font-size: 40pt;
+	width: 90px;
+	height: 90px;
+	border: black solid 5px;
+/* 	background-image: url("backgrounds/img1.jpg"); */
+	position: absolute;
+}
+
+#puzzlearea .moveable:hover {
+	border: red solid 5px;
+}
+>>>>>>> ac9dd56d737d9347102bf97ea5da025b6ebcf909

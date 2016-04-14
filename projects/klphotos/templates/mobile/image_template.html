@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title><SITE_TITLE> - <SUB_TITLE></title>
+<!-- Link for FEED autodiscovery -->
+<FEED_AUTO_DISCOVERY>
+<!-- META -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+<meta name = "Viewport" content = "maximum-scale=1.6,width=320" > 
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="templates/mobile/css/mobile.css" title="light" />
+<!-- SCRIPTS -->
+<script src="templates/mobile/js/jquery.js" type="text/javascript"></script>
+<script src="templates/mobile/js/swipe.js" type="text/javascript"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$("#comments, #addcomment").hide();
+		$("#contentnav a:first").addClass("current");
+		$("#contentnav a").click(function(){
+										  $(".content").hide();
+										  var showthis = $(this).attr("href");
+										  $(showthis).show();
+										  $("#contentnav a").removeClass("current");
+										  $(this).addClass("current");
+										  return false;
+										  });
+	//	$('#swipe').swipe({
+     //swipeLeft: function() { location.href='index.php?showimage=<IMAGE_PREVIOUS_ID>'; },
+     //swipeRight: function() { location.href='index.php?showimage=<IMAGE_NEXT_ID>'; },
+	//	})
+	});
+</script>
+
+</head>
+
+<body>
+<div id="container">
+<h1><a href="index.php" title="Return to current image"><SITE_TITLE> - <SUB_TITLE></a></h1>
+
+<div id="nav">
+<a href="index.php?showimage=<IMAGE_PREVIOUS_ID>" id="prev">Previous</a>
+<a href="index.php?showimage=<IMAGE_NEXT_ID>" id="next">Next</a>
+<a href="index.php?x=browse&pagenum=1" id="browse">Browse</a>
+<a href="index.php?showimage=<IMAGE_RANDOM>" id="random">Random</a>
+</div>
+<div id="picture">
+
+<a href="index.php?showimage=<IMAGE_PREVIOUS_ID>">
+<img src="<SITE_URL>images/<IMAGE_NAME>" alt="<IMAGE_TITLE>" title="<IMAGE_TITLE>"  id="photo" />
+</a>
+</div>
+<div id="contentnav">
+	<a href="#details" id="detailsLink">Details</a>
+    <a href="#comments" id="commentsLink">Comments</a>
+    <a href="#addcomment" id="addLink">Add Comment</a>
+</div>
+<div id="details" class="content">
+	<h2><IMAGE_TITLE></h2>
+	<div id="notes"><IMAGE_NOTES></div>
+</div>
+<div id="comments" class="content">
+	<h2><IMAGE_COMMENTS_NUMBER> <IMAGE_COMMENT_TEXT> for <IMAGE_TITLE></h2>
+    <IMAGE_COMMENTS>
+</div>
+
+<div id="addcomment" class="content">
+<form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8' id="commentForm">
+            <TOKEN>
+            <textarea name='message' id="message"></textarea>
+             <br />
+            <label for="message">Comment</label>
+            <br />
+            <br />
+            <input type='text' name='name' class='input' value='<VINFO_NAME>' id="name" />
+            <br />
+            <label for="name">Name</label>
+            <br />
+            <br />
+            <input type='text' name='url' class='input' value='<VINFO_URL>' id="url" />
+			<br />
+            <label for="url">Website URL, if any</label>
+            <br />
+            <br />
+            <input class='input' type='text' name='email' value='<VINFO_EMAIL>' id="email" />
+			<br />
+            <label for="email">Email (not visible to
+            others)</label>
+            <br />
+            <br />
+            <input name='vcookie' type='checkbox' id="saveinfo" value='set' checked="checked" />
+            <label for="saveinfo">Save User Info</label>
+            <br />
+            <br />
+            &nbsp;&nbsp;
+            <input type='submit' value='Add' class="comment-button" id="submit"/>
+            <input type='hidden' name='parent_id' value='<IMAGE_ID>' id="parent_id"/>
+            <input type='hidden' name='parent_name' value='<IMAGE_NAME>' id="parent_name"/>
+            <input type="hidden" name="withthankyou" value="no" />
+          </form>
+</div>
+
+<div id="footer">&copy; <SITE_TITLE> &bull; <a href="index.php?x=about">About</a> &bull; <a href="mailto:mail@yoururl.com">Contact</a></div>
+
+</div>
+
+</body>
+</html>

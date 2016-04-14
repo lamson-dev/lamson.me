@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!--
+		Pixelution Template by Kevin Crafts - http://blog.kevincrafts.com
+	-->
+	<head>
+		<title>About &bull; <SITE_TITLE></title>
+		<!-- Link for ATOM feed autodiscovery -->
+		<ATOM_AUTODETECT_LINK>
+		<!-- Link for RSS feed autodiscovery -->
+		<RSS_AUTODETECT_LINK>
+		<!-- META -->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+		<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: About" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="stylesheet" type="text/css" href="templates/pixelution/css/pixelution.css"  />
+		<script type="text/javascript" src="templates/pixelution/js/jquery-1.2.6.pack.js"></script>
+
+		
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("ul#nav ul").css("opacity", .85);
+				$('ul#nav > li').hover(
+					function() { $('ul', this).css('display', 'block'); },
+					function() { $('ul', this).css('display', 'none'); 
+				});
+			});
+		</script>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+
+	<div id="siteTitle">
+		<a href="<SITE_URL>"><SITE_TITLE></a>
+	</div>
+	
+	<div id="menu">
+		<ul id="nav">
+			<li><a href="<SITE_URL>">Home</a></li>
+			<li><a href="index.php?x=browse&pagenum=1" id="browseLink">Browse</a>
+				<PIXELUTION_CATEGORIES_MENU>
+			</li>
+			<li><a href="index.php?x=about" id="aboutLink">About</a></li>
+			<li><a href="index.php?x=rss">RSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="wrap">
+<div id="mainBody">
+
+	<h1>About This Blog</h1>
+		<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut tincidunt feugiat enim. Ut quam risus, condimentum at, congue ut, sagittis non, odio. Integer non sem pretium nisl lacinia accumsan. Ut magna dolor, ultrices nec, varius id, dapibus non, nisi. Mauris elementum enim. Donec accumsan, sapien ut dapibus sodales, turpis neque mollis sem, et congue sem nisl facilisis tellus. Nunc porta convallis enim. Ut id dui a metus hendrerit malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed risus. Ut interdum nisi eu lorem.
+</p>
+<p>
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Vivamus eros est, ultricies sit amet, egestas in, tincidunt et, dolor. Ut venenatis. In sollicitudin. Sed tincidunt ullamcorper velit. Curabitur vulputate enim. Vivamus luctus lobortis ipsum. Nam velit dui, cursus vel, semper nec, sollicitudin at, metus. In eros. Mauris rhoncus orci vel velit. Etiam et mauris. Cras erat. Aenean lorem. Nullam sed elit. Cras quis nulla.
+</p>
+	
+	<div style="clear:both;"></div>
+		
+	
+
+</div>
+
+<!-- The main column ends  -->
+
+<!-- begin footer -->
+
+<div style="clear:both;"></div>
+
+</div>
+
+<div id="footerWrapper">
+
+	<div id="footer">
+	
+		<div class="content">
+			<p>&copy; <a href="<SITE_URL>"><SITE_TITLE></a> &bull; Template design by <a href="http://www.kevincrafts.com/">Kevin Crafts</a></p>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+</div>
+</div>
+
+</body>
+</html>

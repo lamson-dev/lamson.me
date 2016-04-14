@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- start site title -->
+<title><SITE_TITLE> | <IMAGE_TITLE></title>
+<!-- end site title -->
+<!-- start feed -->
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<!-- end feed -->
+<!-- start meta data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- end meta data -->
+<!-- start css -->
+<link href="templates/lunas/lunas.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="templates/lunas/favicon.ico" type="image/x-icon" />
+<!-- end css -->
+<!-- start script -->
+<script src="templates/lunas/scripts/lib/prototype.js" type="text/javascript"></script>
+<script src="templates/lunas/scripts/src/scriptaculous.js" type="text/javascript"></script>
+<!-- boxover script is from http://boxover.swazz.org/ -->
+<script type="text/javascript" src="templates/lunas/scripts/boxover.js"></script>
+<script type="text/javascript">
+function changeValue(def_val, sender) {
+    if (sender.value == def_val) {
+        sender.value = "";
+    } else if (sender.value == "") {
+        sender.value = def_val;
+    }
+}
+</script>
+<!-- end script -->
+</head>
+<body>
+<!-- start wrapper -->
+	<div id="wrapper">
+<!-- start leftnavi -->
+	<div id="leftnavi">
+	  <a href="index.php?showimage=<IMAGE_PREVIOUS_ID>"><img src="templates/lunas/images/left-navi.png" alt="" border="none" /></a>
+	</div>
+<!-- end leftnavi -->
+<!-- start center -->
+	<div id="center">
+	<!-- start header -->
+		<div id="header">
+        	<!-- start logo -->
+			<div id="logo"><a href="index.php"><img src="templates/lunas/images/logo.png" width="200" height="80" alt="" /></a></div>
+			<!-- end logo -->
+        	<!-- start menu -->
+			<div id="menu"><a href="index.php">home</a> &middot;  
+          <a href="index.php?x=browse&amp;pagenum=1">fotos</a> &middot; 
+          <a href="index.php?x=about">about</a> <br />
+&nbsp;&nbsp;<br />
+			</div>
+			<!-- end menu -->     
+      </div>
+	<!-- end header -->
+    <!-- start photo -->
+		<div id="photo"><a href="index.php?showimage=<IMAGE_PREVIOUS_ID>"> 
+    <img src="images/<IMAGE_NAME>" alt="" /> 
+    </a></div>
+	<!-- end photo -->
+    <!-- start content -->
+		<div id="content">
+        <!-- start image navigation -->
+  	<div class="imgnavi"><a href="#" onclick="Effect.toggle('comments','BLIND'); return false;"><img src="templates/lunas/images/comments.gif" alt="comments" title="header=[comments] body=[] fade=[off]" /></a>	
+    <a href="#" onclick="Effect.toggle('exif','BLIND'); return false;"><img src="templates/lunas/images/exif.gif" alt="exif data" title="header=[exif data] body=[] fade=[off]" /></a> 
+    <a href="#" onclick="Effect.toggle('share','BLIND'); return false;"><img src="templates/lunas/images/share.gif" alt="share" title="header=[share] body=[] fade=[off]" /></a>
+	</div> 
+<!-- end image navigation -->	
+		<!-- start image title -->
+        <div class="image-title"><p><IMAGE_TITLE> 
+          </p></div>
+		<!-- end image title -->
+		<!-- start images notes -->
+	    <div id="imagenotes"><IMAGE_NOTES>
+        </div>
+        		<!-- end images notes -->
+        <!-- start share (hidden) -->
+        <div id="share" style="display:none"><p><TEXTSHARE><br />
+&nbsp;&nbsp;<br />
+        </p></div>
+		<!-- end share (hidden) -->
+        <!-- start image comments (hidden) -->
+        <div id="comments" style="display:none"><IMAGE_COMMENTS> <br /><a href="#" onclick="Effect.toggle('addcomment','BLIND'); return false;"><img src="templates/lunas/images/addcommentsmall.gif" border="0" align="middle" alt="" /></a> <br/>
+                &nbsp;&nbsp;<br/></div>
+<!-- end image comments (hidden) -->
+<!-- start add comment from (hidden) -->
+   <div id="addcomment" style="display:none"> 
+    <form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'>
+    <br />
+    <textarea name='message' rows='2' cols='70' onfocus="clearBox(this);">...</textarea>
+    <br />
+	<input type='text' name='name' class='input' value='<VINFO_NAME>' id="name"/>
+    <label for="name">Name</label>
+    <br />
+    <input type='text' name='url' class='input' value='<VINFO_URL>' id="url"/>
+    <label for="url">Website</label>
+    <br />
+    <input class='input' type='text' name='email' value='<VINFO_EMAIL>' id="email"/>
+    <label for="email">Email (unsichtbar f&uuml;r andere)</label>
+    <br />
+    <input name='vcookie' type='checkbox' id="saveinfo" value='set' checked="checked" />
+    <label for="saveinfo">Nutzer-Info speichern</label>
+    <br />
+    <input type='image' class='comment-button' value='Add' src='templates/lunas/images/add.gif' align="middle"/>
+    <input type='hidden' name='parent_id' value='<IMAGE_ID>' />
+    <input type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+    <TOKEN> 
+    </form>
+   </div>
+<!-- end add comment from (hidden) -->
+	<!-- start statistic stuff -->
+	<div id="statistics"><p>
+	<img src="templates/lunas/images/line.gif" alt="" /><br/>
+    &nbsp;<br />
+	  <IMAGE_DATE_DAY>/<IMAGE_DATE_MONTH>/<IMAGE_DATE_YEAR_FULL><br />
+      <IMAGE_CATEGORY_PAGED><br />
+      Tags:&nbsp;<TAG_IMG_LIST_PAGED><br />
+      <IMAGE_COUNTER> views, <a href="#" onclick="Effect.toggle('comments','BLIND'); return false;"><IMAGE_COMMENTS_NUMBER> comments</a><br />&nbsp;<br />
+	  <img src="templates/lunas/images/line.gif" alt="" /><br />
+      </p>
+      </div> 
+     <!-- end statistic stuff -->
+	<!-- start exif data (hidden) -->
+	<div id="exif" style="display:none">&nbsp;<br />
+      	Camera: <strong><EXIF_CAMERA_MODEL> (<EXIF_CAMERA_MAKE>)</strong><br />
+		Focal Length: <strong><EXIF_FOCAL_LENGTH></strong><br />
+		Exposure: <strong><EXIF_EXPOSURE_TIME></strong><br />
+		Aperture: <strong><EXIF_APERTURE></strong><br />
+		ISO: <strong><EXIF_ISO></strong><br />
+		&nbsp;<br />
+      <img src="templates/lunas/images/line.gif" alt="" />
+    </div> 
+        <!-- end exif data (hidden) -->
+        </div>
+	<!-- end content -->
+    <div class="clear"></div>
+     <!-- start footer -->
+		<div id="footer"><p> &copy; 2009 <a href="index.php"><SITE_TITLE></a> <a target="_blank" href="index.php?x=rss"><img src="templates/lunas/images/rss.gif" alt="RSS feed" border="0" align="middle" title="header=[RSS feed] body=[] fade=[off]" /></a></p></div>
+	<!-- end footer -->
+   	</div>
+	<!-- end center -->
+<!-- start rightnavi -->
+	<div id="rightnavi">
+		<a href="index.php?showimage=<IMAGE_NEXT_ID>"><img src="templates/lunas/images/right-navi.png" border="none" alt="" /></a>
+	</div>
+<!-- end rightnavi -->
+</div>
+<!-- end wrapper -->
+</body>
+</html>

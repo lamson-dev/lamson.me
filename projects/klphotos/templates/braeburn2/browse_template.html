@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+
+<!-- SITE TITLE, START ***** -->
+<title><SITE_TITLE> | browse archive</title>
+<!-- ***** SITE TITLE, END -->
+
+<!-- FEED AUTODETECT, START ***** -->
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<!-- ***** FEED AUTODETECT, END -->
+
+<!-- META STUFF, START ***** -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- ***** META STUFF, END -->
+
+<!-- CSS STUFF, START ***** -->
+<link href="templates/braeburn2/braeburn2.css" rel="stylesheet" type="text/css">
+<!-- ***** CSS STUFF, END -->
+
+<!-- SCRIPT STUFF, START ***** -->
+<script src="templates/braeburn2/scripts/lib/prototype.js" type="text/javascript"></script>
+<script src="templates/braeburn2/scripts/src/scriptaculous.js" type="text/javascript"></script>
+<!-- BoxOver script is from http://boxover.swazz.org/ -->
+<script type="text/javascript" src="templates/braeburn2/scripts/boxover.js"></script>
+<script type="text/javascript">
+function changeValue(def_val, sender) {
+    if (sender.value == def_val) {
+        sender.value = "";
+    } else if (sender.value == "") {
+        sender.value = def_val;
+    }
+}
+</script>
+<!-- ***** SCRIPT STUFF, END -->
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="670" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="20" background="templates/braeburn2/images/left-shadow.png">&nbsp;</td>
+    <td bgcolor="#FFFFFF"> 
+      <!-- HEADER-NAVIGATION, START ***** -->
+	  <span class="title"><a href="index.php"><SITE_TITLE></a></span>
+      <div class="header"><a href="index.php">home</a> &middot;  
+        <a href="index.php?x=browse&pagenum=1">archive</a> &middot;  
+        <a href="index.php?x=about">about</a></div>
+<!-- ***** HEADER-NAVIGATION, END -->
+
+<!-- THUMBNAILS, START ***** -->
+  <div class="image">
+	<div id="trow"><THUMBNAILS_WHOLE_PAGED></div>
+  </div>
+<!-- ***** THUMBNAILS, END -->  
+
+<!-- THUMBNAIL NAVIGATION, START ***** -->
+  <div class="content">
+
+<!-- DROPDOWN FIELDS, START ***** -->
+  	<div class="imgnavi">
+  	<BROWSE_MONTHLY_ARCHIVE_PAGED>&nbsp;
+  	<BROWSE_CATEGORIES_PAGED>&nbsp;
+  	</div>
+<!-- ***** DROPDOWN FIELDS, END -->	
+
+<!-- CAT/TAG NAME, START ***** -->
+   <div class="image-title"><CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE></div>
+<!-- ***** CAT/TAG NAME, END -->
+
+<!-- PAGE NAVIGATION, START ***** -->
+	<span id="statistics"><p>
+	  page <ARCHIVE_PAGES_NUM> | goto page: <THUMBNAILS_PAGES_LINKS>
+	  </p></span>
+<!-- ***** PAGE NAVIGATION, END -->
+
+<!-- TAG CLOUD, START ***** -->
+   <span id="tagcloud"><TAG_LINKS_AS_LIST_PAGED_NO_NUM></span>
+<!-- ***** TAG CLOUD, END -->
+
+  </div>
+<!-- ***** THUMBNAIL NAVIGATION, END -->
+
+</td>
+    <td width="20" background="templates/braeburn2/images/right-shadow.png">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="20"><img src="templates/braeburn2/images/ul.png" width="20" height="70"></td>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="20"><img src="templates/braeburn2/images/ulm.png" width="20" height="70"></td>
+          <td align="center" class="um">
+		  
+		  	<!-- FOOTER, START ***** -->
+				
+            <div class="footer"> &copy; 2009 <a href="index.php"><SITE_TITLE></a> 
+              | "braeburn" by <a href="http://potd.deenee.de/">deenee</a> 
+              | <a href="index.php?x=rss"><img src="templates/braeburn2/images/feed.gif" alt="RSS feed" border="0" align="absmiddle" title="header=[RSS feed] body=[] fade=[off]"></a> 
+              <a href="admin/index.php"><img src="templates/braeburn2/images/admin.gif" border="0" align="absmiddle"></a> 
+            </div>
+			<!-- ***** FOOTER, END -->
+
+			</td>
+          <td width="20" align="right"><img src="templates/braeburn2/images/urm.png" width="20" height="70"></td>
+        </tr>
+      </table></td>
+    <td width="20"><img src="templates/braeburn2/images/ur.png" width="20" height="70"></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+<title><SITE_TITLE></title>
+<ATOM_AUTODETECT_LINK>
+<RSS_AUTODETECT_LINK>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="templates/honey/honey.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="<IMAGE_WIDTH>" border="0" align="center" cellpadding="0" cellspacing="0" id="main">
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="navigation">
+        <tr> 
+          <td width="70%" class="title"><a href="index.php"><SITE_TITLE></a></td>
+          <td align="right"><a title="browse" href="index.php?x=browse&amp;pagenum=1">archive</a> 
+            / <a title="about + links" href="index.php?x=about">about</a> / <a href="index.php?x=rss" title="RSS">rss</a></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="image-title">
+        <tr> 
+          <td class="title"><a href="index.php?showimage=<IMAGE_PREVIOUS_ID>">&laquo;</a> 
+            <IMAGE_TITLE> <a href="index.php?showimage=<IMAGE_NEXT_ID>">&raquo;</a></td>
+          <td align="right"><img src="templates/honey/clock.png" align="absmiddle"> <IMAGE_DATETIME> (<IMAGE_COUNTER_VIEWS> views)</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td align="center"><a href="index.php?showimage=<IMAGE_PREVIOUS_ID>"><img src="images/<IMAGE_NAME>" title="<IMAGE_TITLE>" alt="<IMAGE_TITLE>" border="0" width="<IMAGE_WIDTH>" height="<IMAGE_HEIGHT>" /></a></td>
+  </tr>
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" class="categories">
+        <tr> 
+          <td><img src="templates/honey/categories.png" align="absmiddle"> <IMAGE_CATEGORY_PAGED></td>
+          <td align="right"><img src="templates/honey/tags.png" align="absmiddle"> <TAG_IMG_LIST_PAGED></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td bgcolor="EBEBEB" class="clickhere"><a href="index.php?popup=comment&amp;showimage=<IMAGE_ID>"><img src="templates/honey/comments.png" align="absmiddle" border="0"> 
+      CLICK HERE To READ/ADD COMMENTS (<IMAGE_COMMENTS_NUMBER>) ...</a></td>
+  </tr>
+  <tr> 
+    <td id="image-info"><IMAGE_NOTES></td>
+  </tr>
+  <tr> 
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0" id="copyright">
+        <tr> 
+          <td><span class="title"><SITE_TITLE></span> &copy; 2009</td>
+          <td align="right">Template "honey" made by <a href="http://potd.deenee.de/">deenee</a></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

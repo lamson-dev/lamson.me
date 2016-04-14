@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<!--
+		Pixelution Template by Kevin Crafts - http://blog.kevincrafts.com
+	-->
+	<head>
+		<title><CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE> &bull; Browse &bull; <SITE_TITLE></title>
+		<!-- Link for ATOM feed autodiscovery -->
+		<ATOM_AUTODETECT_LINK>
+		<!-- Link for RSS feed autodiscovery -->
+		<RSS_AUTODETECT_LINK>
+		<!-- META -->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+		<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: <CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE>" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<link rel="stylesheet" type="text/css" href="templates/pixelution/css/pixelution.css"  />
+
+
+		<script type="text/javascript" src="templates/pixelution/js/jquery-1.2.6.pack.js"></script>
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$("ul#nav ul").css("opacity", .85);
+				$('ul#nav > li').hover(
+					function() { $('ul', this).css('display', 'block'); },
+					function() { $('ul', this).css('display', 'none'); 
+				});
+				
+			});
+		</script>
+		
+
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+
+	<div id="siteTitle">
+		<a href="<SITE_URL>"><SITE_TITLE></a>
+	</div>
+	
+	<div id="menu">
+		<ul id="nav">
+			<li><a href="<SITE_URL>">Home</a></li>
+			<li><a href="index.php?x=browse&pagenum=1" id="browseLink">Browse</a>
+				<PIXELUTION_CATEGORIES_MENU>
+			</li>
+			<li><a href="index.php?x=about" id="aboutLink">About</a></li>
+			<li><a href="index.php?x=rss">RSS</a></li>
+		</ul>
+	</div>
+
+</div>
+
+<div id="wrap">
+<div id="mainBody">
+
+	<div id="browse">
+		<div id="browseTitle">
+			<div id="catbrowse"><BROWSE_CATEGORIES_PAGED></div>
+			<CATEGORY_OR_DATE_NAME_PAGED_ARCHIVE>
+		</div>
+		<div id="browsePages">Pages: <THUMBNAILS_PAGES_LINKS></div>
+		<div id="thumbnails">
+			<THUMBNAILS_WHOLE_PAGED>
+		</div>
+	</div>
+			
+	
+	
+	<div style="clear:both;"></div>
+		
+	
+
+</div>
+
+<!-- The main column ends  -->
+
+<!-- begin footer -->
+
+<div style="clear:both;"></div>
+
+</div>
+
+<div id="footerWrapper">
+
+	<div id="footer">
+	
+		<div class="content">
+			<p>&copy; <a href="<SITE_URL>"><SITE_TITLE></a> &bull; Template design by <a href="http://www.kevincrafts.com/">Kevin Crafts</a></p>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+</div>
+</div>
+
+</body>
+</html>

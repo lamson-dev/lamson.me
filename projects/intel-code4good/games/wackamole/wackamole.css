@@ -1,0 +1,17 @@
+/* 
+	Son Nguyen
+	
+	css style sheet for wackamole.html											
+*/
+
+body {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;	
+	background-color: #CCC;
+}
+
+canvas {
+  background-color: #FFF;
+  border: 1px solid #999;
+}

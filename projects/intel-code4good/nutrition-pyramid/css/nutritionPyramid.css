@@ -1,0 +1,45 @@
+/* CSS Document */
+div {
+	background-repeat: no-repeat;
+
+}
+#pyramid {
+	width: 500px;
+	height: 450px;
+	float: left
+}
+
+#fat_part {
+	width: 500px;
+	height: 90px;
+	background-image: url("../img/pyramidEmpty.png");
+	background-position: center top
+}
+
+#protein_part {
+	width: 500px;
+	height: 110px;
+	background-image: url("../img/pyramidEmpty.png");
+	background-position: center -90px
+}
+
+#veget_part {
+	width: 500px;
+	height: 100px;
+	background-image: url("../img/pyramidEmpty.png");
+	background-position: center -200px
+}
+
+#rice_part {
+	width: 500px;
+	height: 100px;
+	background-image: url("../img/pyramidEmpty.png");
+	background-position: center -300px
+}
+
+img {
+	/*display: block;*/
+	margin-left: auto;
+	margin-right: auto;
+	caption-side: right
+} 

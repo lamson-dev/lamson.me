@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>
+			Browse &bull;
+				<SITE_TITLE>
+		</title>
+<!-- Link for ATOM feed autodiscovery -->
+		<ATOM_AUTODETECT_LINK>
+<!-- Link for RSS feed autodiscovery -->
+			<RSS_AUTODETECT_LINK>
+<!-- META -->
+				<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+				<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,Pixelpost" />
+				<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog" />
+<!-- CSS -->
+				<link rel="stylesheet" type="text/css" href="templates/switchy/styles/light.css" title="light" />
+				<link rel="alternate stylesheet" type="text/css" href="templates/switchy/styles/dark.css" title="dark" />
+				<script type="text/javascript" src="templates/switchy/js/styleswitcher.js"></script>
+				<script type="text/javascript" src="templates/switchy/js/jquery.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+					
+					});
+				</script>
+	</head>
+	<body>
+		<div class="container">
+			
+			<table id="outside" border="0" cellpadding="0" cellspacing="0" align="center" width="800">
+				<tr>
+					<td>
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" id="banner">
+							<tr>
+								<td width="100%">
+									<h1><a href="<SITE_URL>"><SITE_TITLE></a></h1>
+								</td>
+								<td class="nav"><a href="<SITE_URL>">Latest</a></td> 
+								<td class="nav"><a href="<SITE_BROWSELINK>">Browse</a></td >
+								<td class="nav"><a href="./index.php?x=about">About</a></td >
+								<td class="nav"><a href="./index.php?x=rss">RSS</a></td >
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						
+						
+						<table border="0" cellspacing="0" cellpadding="0" >
+							<tr>
+								<td id="thumbs" valign="top" style="width:550px;"><THUMBNAILS></td>
+								<td valign="top" class="sidecol">
+									<div class="details">
+										<h3>Categories</h3>
+										<CATEGORY_LINKS_AS_LIST>
+										<h3>Tags</h3>
+										<TAG_LINKS_AS_LIST>
+									</div>
+								</td>
+							</tr>
+						</table>
+					
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" id="footer">&copy; <a href="<SITE_URL>"><SITE_TITLE></a> &bull; Powered by <a href="http://www.pixelpost.org">PixelPost</a> &bull; Theme: <a href="#" class="style" onclick="setActiveStyleSheet('light'); return false;">Light</a> | <a href="#" class="style" onclick="setActiveStyleSheet('dark'); return false;">Dark</a></td>
+				</tr>
+			</table>
+			
+			
+			
+			
+			
+			</div>
+	</body>
+</html>

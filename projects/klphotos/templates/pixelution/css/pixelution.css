@@ -1,0 +1,269 @@
+html { overflow-y: scroll; }
+* { outline:none; }
+img { border:none; }
+a:link, a:visited {
+	color:#006BC2;
+	text-decoration:none;
+}
+a:hover {
+	color:#000;
+	background-color:#006BC2;
+}
+body {
+	background-color:#151515;
+	color:#8A8A8A;
+	font-family: Verdana, Arial, Tahoma;
+	margin: 0px;
+	padding: 0px;
+}
+#container {
+	font-size:small;
+}
+#header {
+	width:950px;
+	margin:0 auto;
+	height:80px;
+	position:relative;
+}
+#siteTitle {
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	font-size:32px;
+}
+#siteTitle a:link, #siteTitle a:visited, #siteTitle a:hover {
+	color:#484848;
+	text-decoration:none;
+	background:none;
+}
+#menu {
+	position:absolute;
+	right:0px;
+	bottom:10px;
+}
+
+
+/* NAV MENU */
+
+
+ul#nav {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul#nav li {
+	margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative;
+  height: auto;
+	}
+ul#nav li a:link, ul#nav li a:visited {
+	display:block;
+	float:left;
+	color:#CCC;
+	margin-left:10px;
+	text-decoration:none;
+	line-height:20px;
+}
+ul#nav li a:hover {
+	color:#EEE;
+	background:none;
+}
+
+/* SUB MENU */
+ul#nav li:hover ul {
+	display:block;
+}
+ul#nav  ul {
+	display:none;
+	position:absolute;
+	z-index:10;
+	top:18px;
+	right:-11px;
+	width:150px;
+	background-color:#000;
+	border:1px solid #222;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+ul#nav ul li {
+	width:150px;
+	float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+	padding:0;
+	margin:0;
+}
+ul#nav ul li a:link, ul#nav ul li a:visited {
+	display:block;
+	background-color:#111;
+	margin:0;
+	padding:3px 10px;
+	float:none;
+	text-align:right;
+	}
+ul#nav ul li a:hover {
+	background-color:#006BC2;
+	color:#000;
+	
+}
+
+/* PHOTO AREA */
+
+#wrap {
+	background-color:#000;
+	background-image:url(../images/photoBG.jpg);
+	background-repeat:repeat-x;
+	padding:10px 0;
+	border-top:1px solid #353535;
+}
+#mainBody {
+	width:950px;
+	margin:0px auto;
+	overflow:auto;
+}
+#photoWrapper {
+	width:600px;
+	float:left;
+	overflow:auto;
+}
+a.zoom:link, a.zoom:visited, a.zoom:hover {
+	display:block;
+	position:relative;
+	border:10px solid #000000;
+	background:none;
+	float:right;
+	margin-right:30px;
+}
+a.zoom span {
+	width:26px;
+	height:26px;
+	background-image:url(../images/zoom.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	top:8px;
+	left:8px;
+}
+#details {
+	width:345px;
+	margin-left:600px;
+}
+#photocategories, #phototags {
+}
+p#prevnext a:link, p#prevnext a:visited {
+	margin-right:20px;
+}
+#footerWrapper {
+	border-top:1px solid #252525;
+	background-color:#151515;
+	}
+#footer {
+	width:950px;
+	margin:0 auto;
+}
+#photos {
+	margin-top:10px;
+	border-top:1px solid #252525;
+	clear:both;
+	width:950px;
+}
+#photos h3 {
+	font-weight:normal;
+	color:#484848;
+}
+#photos a:link, #photos a:visited {
+	display:block;
+	float:left;
+	margin-right:20px;
+	background-color:#FFF;
+}
+#browse {
+	font-size:small;
+	color:#BBB;
+}
+#catbrowse {
+	font-size:90%;
+	font-weight:normal;
+	float:right;
+}
+#browseTitle {
+	color:#BBB;
+	padding:4px;
+	font-size:120%;
+	font-weight:bold;
+	overflow:auto;
+}
+#browsePages {
+	color:#555;
+	background-color:#111;
+	overflow:auto;
+	line-height:20px;
+	padding-left:3px;
+	margin-bottom:10px;
+}
+#browsePages a:link, #browsePages a:visited {
+	color:#666;
+	padding:0 3px;
+	font-size:90%;
+}
+#browsePages a:hover, #browsePages span.archive_active_page_number a:link, #browsePages span.archive_active_page_number a:visited {
+	color:#AAA;
+	background-color:#111;
+}
+#thumbnails {
+	clear:both;
+}
+#thumbnails a:link, #thumbnails a:visited {
+	display:block;
+	float:left;
+	margin:0 10px 10px 0;
+}
+/* COMMENTS */
+#comments {
+	padding:0 10px;
+	font-size:small;
+	overflow:auto;
+	color:#B5B5BB;
+	display:none;
+}
+#commentList {
+	float:left;
+	width:570px;
+}
+#commentForm {
+	float:left;
+	width:320px;
+}
+#commentList ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#commentList ul li {
+	padding:3px 0 8px 0;
+	margin-bottom:3px;
+	border-bottom:1px solid #333;
+}
+input.formfield, textarea {
+	background-color:#333;
+	border:1px solid #35353A;
+	width:240px;
+	padding:5px;
+	color:#666;
+}
+textarea {
+	height:120px;
+}
+input.formfield:focus, textarea:focus {
+	color:#FFF;
+}
+
+
+.content {
+	padding:20px;
+}

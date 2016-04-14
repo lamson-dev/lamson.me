@@ -1,0 +1,9 @@
+body {
+	font-family: Helvetica,Candara,Verdana,Arial,sans-serif;
+}
+#img-comments .button,#img-comments input,#img-comments label,#img-comments select,#img-comments textarea {
+	font-family: Helvetica,Candara,Verdana,Arial,sans-serif;
+}
+#logo {
+	font-family: Constantia,Georgia,serif;
+}

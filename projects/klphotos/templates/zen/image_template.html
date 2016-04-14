@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<FEED_AUTO_DISCOVERY>
+<link rel="shortcut icon" href="templates/zen/favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-type" name="keywords" content="photoblog,<SITE_TITLE>,<IMAGE_TITLE>" />
+<meta http-equiv="content-type" name="description" content="<SITE_TITLE> - photoblog, <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+<title><SITE_TITLE> | <IMAGE_TITLE></title>
+<link href="templates/zen/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div align="center"><img src="templates/zen/images/hdr.gif" alt="header" width="750" height="41" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+  <area shape="rect" coords="28,6,113,24" href="index.php" alt="Home" title="Latest Image" />
+  <area shape="rect" coords="402,3,477,24" href="index.php?showimage=<IMAGE_PREVIOUS_ID>" alt="previous image" />
+  <area shape="rect" coords="494,3,547,23" href="index.php?showimage=<IMAGE_NEXT_ID>" alt="next image" />
+  <area shape="rect" coords="569,3,626,24" href="index.php?x=browse" alt="browse" title="Browse the Thumbnails" />
+  <area shape="rect" coords="642,3,674,24" href="index.php?x=rss" alt="RSS feed" title="Subscribe to RSS feed" />
+  <area shape="rect" coords="686,3,717,24" href="index.php?x=atom" alt="ATOM feed" title="Subscribe to ATOM feed" />
+</map>
+
+<p><a href="index.php?showimage=<IMAGE_PREVIOUS_ID>"><img class="image" src="images/<IMAGE_NAME>" alt="<IMAGE_TITLE>" width="<IMAGE_WIDTH>" height="<IMAGE_HEIGHT>" /></a></p>
+
+<table width="<IMAGE_WIDTH>" border="0">
+  <tr>
+    <td>
+  <div align="left" class="footer"><IMAGE_DATETIME> - <IMAGE_TITLE> - [<IMAGE_COMMENTS_NUMBER>] <COMMENT_POPUP> 
+    <img src="templates/zen/images/comment.gif" alt="Add comment" width="19" height="12" border="0" /><br /><br />
+  <IMAGE_NOTES>
+  </div>
+  <br />
+  <div align="left" class="date"><TEXTSHARE>
+  </div>
+  </td>
+  </tr>
+</table>
+<br />
+<div align="center" class="footer">
+© <a href="index.php"><SITE_TITLE></a> | powered by <a href="http://www.pixelpost.org/">pixelpost</a> | template by <a href="http://www.clickwithpeople.com">Larrie Knights</a>
+</div>
+<br /><br />
+</body>
+</html>

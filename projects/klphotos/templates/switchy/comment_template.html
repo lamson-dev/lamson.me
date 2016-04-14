@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>
+			<IMAGE_TITLE> &bull;
+				<SITE_TITLE>
+		</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+				<meta http-equiv="content-type" name="keywords" content="PhotoBlog,<SITE_TITLE>,<IMAGE_TITLE>,Pixelpost" />
+				<meta http-equiv="content-type" name="description" content="<SITE_TITLE>-PhotoBlog: <IMAGE_TITLE>, <IMAGE_NOTES_CLEAN>" />
+<!-- CSS -->
+				<link rel="stylesheet" type="text/css" href="templates/switchy/styles/light.css" title="light" />
+				<link rel="alternate stylesheet" type="text/css" href="templates/switchy/styles/dark.css" title="dark" />
+				<script type="text/javascript" src="templates/switchy/js/styleswitcher.js"></script>
+				<script type="text/javascript" src="templates/switchy/js/jquery.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+					  $("li:odd").addClass("odd");
+					  $("li:even").addClass("even");
+					});
+				</script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="commentTop">
+				<a href="javascript:window.close();" style="font-size:85%; float:right; display:boock; margin:4px;">close</a>
+				<h2><IMAGE_TITLE></h2>
+			</div>
+			<div id="commentMid"><IMAGE_COMMENTS></div>
+			<div id="commentBottom">
+				<form method='post' action='index.php?x=save_comment' name='commentform' accept-charset='UTF-8'>
+							<TOKEN>
+								<textarea name='message' rows='4' cols='40' onfocus="this.value='';">Type your comment here.</textarea>
+								<br />
+								<br />
+								<input type='text' name='name' class='input' value='<VINFO_NAME>' id="name" size="40"/>
+								<br />
+								<label for="name">Name</label>
+								<br />
+								<br />
+								<input type='text' name='url' class='input' value='<VINFO_URL>' id="url" size="40"/>
+								<br />
+								<label for="url">Website URL, if any</label>
+								<br />
+								<br />
+								<input class='input' type='text' name='email' value='<VINFO_EMAIL>' id="email" size="40"/>
+								<br />
+								<label for="email">Email (not visible to
+									others)
+								</label>
+								<br />
+								<br />
+								<input name='vcookie' type='checkbox' id="saveinfo" value='set' checked="checked" />
+								<label for="saveinfo">Save User Info</label>
+								<br />
+								<br />
+								&nbsp;&nbsp;
+								<input type='submit' value='Add' class="comment-button"/>
+								<input type='hidden' name='parent_id' value='<IMAGE_ID>' />
+								<input type='hidden' name='parent_name' value='<IMAGE_NAME>' />
+								<input type="hidden" name="withthankyou" value="no" />
+						</form>
+			</div>
+		</div>
+	</body>
+</html>

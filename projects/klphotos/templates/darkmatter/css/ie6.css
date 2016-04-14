@@ -1,0 +1,76 @@
+.w800 #tags-tab-toggle, .w800 #image-info-toggle, .w800 #thumbnail-navigator-toggle, .w800 #comments-toggle {
+    background: url(../img/tab_800.png);	
+	behavior: url(templates/darkmatter/iepngfix.htc);
+}
+
+.w800 #commentform-toggle {
+	background: url(../img/tab_bottom_800.png);	
+	behavior: url(templates/darkmatter/iepngfix.htc);
+}
+
+.w800f {
+  background: #444 url(../img/pagebottom800.gif) no-repeat bottom;
+  width: 890px;	
+}
+
+#title {
+	background: url(../img/logo-ie.png) no-repeat 16px 16px;	
+}
+
+#tags-tab {
+	margin-top: 110px;
+}
+
+#archive-wrapper {
+	border-top: 0;
+}
+
+body.js #archive-wrapper {
+	border-top: 75px #444 solid;
+}
+
+body.js #tags-tab {
+	position: absolute;
+	top: -20px;
+	width: 800px;
+	z-index: 9999;	
+}
+
+#thumbs #view-window #ieleft {
+	left: -600px;
+}
+
+#thumbs a#nav_right {
+	margin-left: 20px;
+	margin-right: -20px;
+}
+
+.w800 #thumbs {
+	padding-right: 50px;
+	margin-left: -50px;
+}
+
+#photo-next:hover, #photo-next:focus {
+	background:url(../img/p_next_ie.png) no-repeat center right;
+}
+
+#photo-prev:hover, photo-next:focus {
+	background:url(../img/p_prev_ie.png) no-repeat center left;
+}
+
+#photo-next:hover, #photo-next:focus {
+  background:url(../img/arr_right_ie.png) no-repeat center center;
+}
+#photo-prev:hover, #photo-prev:focus {
+  background:url(../img/arr_left_ie.png) no-repeat center center;
+}
+
+div#n-next.hover {
+  background:url(../img/arr_right_ie.png) no-repeat center center;
+}
+div#n-prev.hover {
+  background:url(../img/arr_left_ie.png) no-repeat center center;
+}
+h3#cheader {
+height: 3em;
+overflow: hidden;

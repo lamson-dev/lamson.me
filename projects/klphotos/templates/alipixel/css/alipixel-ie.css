@@ -1,0 +1,23 @@
+/*
+	TEMPLATE NAME: alipixel
+	AUTHOR: Ali TowFigh
+	AUTHOR WEBSITE: http://alipixel.com
+	VERSION: 1.0
+	
+	Internet Explorer 6,7,8 CSS hacks
+*/
+
+#column1, #column2, #column3 {
+	width: 220px;
+}
+
+a img.thumbnails {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=69);
+}
+
+a:hover img.thumbnails, a:focus img.thumbnails {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+}
+#addcomment {
+	padding: 0px 10px;
+}

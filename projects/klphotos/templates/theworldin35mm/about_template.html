@@ -1,0 +1,50 @@
+<script type="text/javascript" src="templates/theworldin35mm/js/mootools-core-1.3.1-full-nocompat-yc.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function aboutImageLoaded()
+{
+	var fadeFx = new Fx.Tween('img-photo',
+	{
+		property: 'opacity',
+		duration: 750,
+		transition: Fx.Transitions.Expo.easeInOut
+	});
+	
+	fadeFx.start(0,1).chain(function()
+	{
+		document.id('about-img-border').setStyle('background-image', 'none');
+	});
+}
+//]]>
+</script>
+<div class="page-wrapper">
+	<div id="about-img-border" class="border-frame" style="margin-bottom: 10px;">
+		<img id="img-photo" src="<35MM_ABOUT_IMAGE>" alt="About <SITE_TITLE>" class="border-matte" style="visibility: hidden; width: <35MM_ABOUT_IMAGE_WIDTH>px; height: <35MM_ABOUT_IMAGE_HEIGHT>px;" onload="aboutImageLoaded();" />
+	</div>
+	
+	<div id="notes-cmts-container">
+		<h3>About</h3>
+		<p>=)
+<!--
+			To edit this page, using your favorite text editor, edit
+			<span style="font-family: monospace;">templates/theworldin35mm/about_template.html</span>
+			or see this <a href="http://www.pixelpost.org/forum/showthread.php?t=10625" title="">Pixelpost Forum Post</a>
+			for more information.
+		</p>
+		
+		<h3>Pixelpost Template Information</h3>
+		<p>
+			File bug reports, feature requests, and more at the template's 
+			<a href="http://code.google.com/p/theworldin35mm/" title="The World in 35mm at Google Code">Google Code Page</a> 
+			or use the official help and support <a href="http://www.pixelpost.org/forum/forumdisplay.php?f=10">Pixelpost Help Forum</a>. 
+			Please do <b>NOT</b> email me with questions regarding this template. Thanks.
+		</p>
+-->
+		
+		<h3>Contact</h3>
+		<p><a href="mailto:<35MM_EMAIL>"><35MM_AUTHOR></a></p>
+		
+		<h3>Tag Cloud</h3>
+		<35MM_TAG_CLOUD_LIST>
+	</div>
+</div>

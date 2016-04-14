@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<script src="http://code.jquery.com/jquery-1.8.1.js"></script>
+<script src="js/foodCategory.js" type="text/javascript"></script>
+<style>
+	img {
+		caption-side: right;
+	}
+	
+	#answerBoard {
+		width: 200px;
+		height: 300px;
+		border: 1px solid;
+	}
+</style>
+
+<body>
+	<p><b>Which of the following belongs to the fat and oil food group?</b> To answer, click an image, drag and drop it to the answer box. There are more than one answer.</p>
+    
+    <div style="width:300px; float:left">
+    	<div id="no_strawberry">
+        	<img id="strawberry" src="img/no_strawberry.png" draggable="true"/>
+            <caption>Strawberry</caption>
+        </div>
+        <div id="yes_avocado">
+        	<img id="avocado" src="img/yes_avocado.png" draggable="true"/>
+            <caption>Avocado</caption>
+        </div>
+         <div id="yes_oil">
+        	<img id="oil" src="img/yes_oil.png" draggable="true"/>
+            <caption>Cooking Oil</caption>
+        </div>
+         <div id="no_pasta">
+        	<img id="pasta" src="img/no_pasta.png" draggable="true"/>
+            <caption>Pasta</caption>
+        </div>
+         <div id="yes_peanut">
+        	<img id="peanut" src="img/yes_peanut.png" draggable="true"/>
+            <caption>Peanut</caption>
+        </div>
+        <div id="no_jambon">
+        	<img id="jambon" src="img/no_jambon.png" draggable="true"/>
+            <caption>Jambon</caption>
+        </div>
+    </div>  
+    
+    <div style="float: left">
+    	Drap your answer below here:
+        <div id="answerBoard" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+    </div>
+</body>
+</html>
