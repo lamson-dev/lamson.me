@@ -1,3 +1,4 @@
+.DS_Store
 
 # random #
 ##################
@@ -12,7 +13,7 @@ files/
 libs/
 amwedding/
 stuff/
-projects/
+#projects/
 yooniebakery.com/
 .idea/
 
