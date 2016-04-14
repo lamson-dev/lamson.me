@@ -1,0 +1,34 @@
+/* 
+	Son Nguyen
+	CSE 190 M
+	Homework #8
+	
+	TA: Rishi Goutam
+	
+	css style sheet for names.html											
+*/
+
+body, button, select {
+	font-family: Georgia, serif;
+	font-size: 12pt;
+}
+
+#meaning q {
+	font-style: italic;
+}
+
+#graph div {
+	background-color: #FFBBBB;
+	width: 50px;
+}
+
+#graph .highrank {
+	color: red;
+}
+
+#graph td {
+	height: 250px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: bottom;
+}

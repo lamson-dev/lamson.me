@@ -1,0 +1,132 @@
+/*
+	Son Nguyen
+	CSE 190 M
+	Homework #3
+	
+	TA: Rishi Goutam
+	
+	css style sheet for movie.php
+
+*/
+
+body {
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 8pt;
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/3/background.png");
+	margin: 0px;
+	padding: 0px;
+}
+
+#banner {
+	text-align: center;
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/3/bannerbg.png");
+	height: 50px;
+}
+
+#mainheading {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 24pt;
+	font-weight: bold;
+	text-shadow: 3px 3px #999999;
+	text-align: center;
+}
+
+#maincontent {
+	border: 4px solid gray;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	overflow: hidden;
+}
+
+#leftsection {
+	width: 550px;
+}
+
+#ratingbar {
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/3/rbg.png");
+	height: 83px;
+}
+
+#ratingbar img {
+	vertical-align: bottom;
+}
+
+#ratingbar span {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+
+.column {
+	float: left;
+	width: 47%;
+	margin-left: 2%;
+}
+
+.review {
+	font-size: 8pt;
+	font-weight: bold;
+	border: 2px solid gray;
+	border-radius: 10px;
+	background-color: #E1D697;
+	padding: 8px;
+	overflow: hidden;
+}
+
+.review img, .critic img {
+	float: left;
+	margin-right: 5px;
+}
+
+.critic {
+	overflow: hidden;
+	margin-bottom: 20pt;
+	
+}
+
+.publication {
+	font-style: italic;
+}
+
+#overview {
+	float: right;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	background-color: #A2B964;
+	width: 250px;
+}
+
+#overview dl {
+	margin: 10pt;
+}
+
+#overview dt {
+	font-weight: bold;
+}
+
+#overview dl dd {
+	margin-bottom: 10pt;
+}
+
+#overview ul {
+	list-style-type: none;
+	padding-left: 0px;
+	
+}
+
+#page {
+	clear: both;
+	text-align: center;
+	background-color: #A2B964;
+	padding: 5px;
+	margin: 0px;
+}
+
+#validation {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	opacity: .50;
+}

@@ -1,0 +1,63 @@
+/*
+	Son Nguyen
+	CSE 190 M
+	Homework #5
+	
+	TA: Rishi Goutam
+	
+	css style sheet for the One Degree of Kevin Bacon page
+
+*/
+
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 11pt;
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/5/background.png");
+	margin: 0px;
+	padding: 0px;
+	background-color: #DAD9D4;
+}
+
+#frame {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#banner, #w3c {
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/5/banner-background.png");
+	color: white;
+	font-weight: bold;
+	padding: 1em;
+}
+
+#main {
+	text-align: center;
+	background: white;
+	padding: 1em;
+}
+
+#moviestable {
+	padding-bottom: 1em;
+}
+
+form {
+	width: 24em;	
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+ 
+}
+
+table { 
+	border: 1px solid #DAD9D4;
+	border-collapse: collapse;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+table tr:nth-child(even) {
+	background-color: #DAD9D4;
+}

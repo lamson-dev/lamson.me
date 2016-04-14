@@ -1,5 +1,3 @@
-.DS_Store
-
 # random #
 ##################
 .htaccess
@@ -8,14 +6,13 @@ php.ini
 # folders #
 ##################
 
-images/
-files/
-libs/
-amwedding/
-stuff/
+#images/
+#files/
+#libs/
+#amwedding/
+#stuff/
 #projects/
-yooniebakery.com/
-.idea/
+#yooniebakery.com/
 
 # Compiled source #
 ###################

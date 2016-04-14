@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--  	Son Nguyen
+		CSE 190 M
+		Homework #6
+
+		TA: Rishi Goutam		
+		
+		Description: html file for CSE 190 M ASCII Animation Page
+		 
+		This file creates a user interface for creating/viewing
+		ASCIImations
+		
+-->
+
+<html>	
+	<head>
+		<title>ASCIImation</title>
+		<meta charset="utf-8" />
+
+		<link href="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/6/favicon.png" type="image/png" rel="shortcut icon" />
+		<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js" type="text/javascript"></script>
+		
+
+<!--		<script src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/6/animations.js" type="text/javascript"></script>
+		<script src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/6/gallery.js" type="text/javascript"></script> -->
+		<script src="animations.js" type="text/javascript"></script>
+		<script src="gallery.js" type="text/javascript"></script>
+		<script src="myanimation.js" type="text/javascript"></script>
+		<script src="ascii.js" type="text/javascript"></script>
+		
+		<link href="ascii.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+		<div id="main">			
+
+			<h1>CSE 190 M ASCII Animation Viewer</h1>
+			
+			<textarea id="textbox" cols="80" rows="20"></textarea>
+							
+			<div id="controls">
+			
+				<fieldset>
+					<legend>Play Controls:</legend>
+						<button id="startButton">Start</button>
+						<button id="stopButton">Stop</button>														
+				</fieldset>
+									
+				<fieldset>
+					<legend>Animation:</legend>
+					<select id="animation">
+						<option selected="selected">Blank</option>
+						<option>Exercise</option>
+						<option>Juggler</option>
+						<option>Bike</option>
+						<option>Dive</option>
+						<option>Custom</option>	
+					</select>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Size:</legend>
+					<select id="size">
+						<option value="7pt">Tiny</option>
+						<option value="10pt">Small</option>
+						<option value="12pt" selected="selected">Medium</option>
+						<option value="16pt">Large</option>
+						<option value="24pt">Extra Large</option>
+						<option value="32pt">XXL</option>	
+					</select>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Speed:</legend>
+
+					<label><input type="checkbox" id="turbo" value="50" />Turbo</label>
+
+				</fieldset>
+				
+			</div>
+
+			
+		</div> <!-- end of #main div -->
+	
+		<div id="w3c">
+			<a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/w3c-html.png" alt="Valid HTML5" /></a> <br />
+			<a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/w3c-css.png" alt="Valid CSS" /></a> <br />
+			<a href="https://webster.cs.washington.edu/jslint/?referer"><img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" /></a>
+
+		</div>
+	</body>
+</html>

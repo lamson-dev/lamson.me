@@ -1,0 +1,83 @@
+/* 
+	Son Nguyen
+	CSE 190 M
+	Homework #9
+	
+	TA: Rishi Goutam
+	
+	css style sheet for remember the cow todolist web page
+*/
+
+body, h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+body, form, input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+
+.headfoot {
+	background-color: #005AB4;
+	color: white;
+	padding: .5em;
+}
+
+.headfoot h1 img {
+	float: left;
+	margin-right: 1em;
+}
+
+#main, #main input, a {
+	color: #005AB4;
+}
+
+#main {
+	width: 600px;
+	margin: auto;
+	padding-bottom: 2em;
+}
+
+#main h2, #buttons, #logout {
+	text-align: center;
+}
+
+#main h2, #main p, #buttons, #logout {
+	margin-top: 0px;
+}
+
+#logout {
+	position: absolute;
+	top: 40px;
+	left: 85%;
+	background-color: white;
+	padding: 5px;
+}
+
+#logout:hover {
+	background-color: #CCCCAA;
+}
+
+#flash, #reserved4flash {
+	background-color: rgb(255,210,211);
+	text-align: center;
+	border: 1px dotted black;
+	margin: 0.5em;
+	padding: 0.5em;
+	height: 25px;
+}
+
+#reserved4flash {
+	visibility: hidden;
+}
+
+/*
+#flash .error {
+	background-color: rgb(255,210,211);	
+}
+
+#flash .success {
+	background-color: #FFFFCC;
+}
+*/
