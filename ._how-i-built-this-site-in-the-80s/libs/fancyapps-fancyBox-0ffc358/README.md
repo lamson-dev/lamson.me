@@ -1,17 +1,14 @@
-fancyBox
-========
+# fancyBox
 
 fancyBox is a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages.
 
-More information and examples: http://www.fancyapps.com/fancybox/
+More information and examples: <http://www.fancyapps.com/fancybox/>
 
-License: http://www.fancyapps.com/fancybox/#license
+License: <http://www.fancyapps.com/fancybox/#license>
 
 Copyright (c) 2012 Janis Skarnelis - janis@fancyapps.com
 
-
-How to use
-----------
+## How to use
 
 To get started, download the plugin, unzip it and copy files to your website/application directory.
 Load files in the <head> section of your HTML document. Make sure you also add the jQuery library.
@@ -79,8 +76,7 @@ Note, ajax requests are subject to the [same origin policy](http://en.wikipedia.
 If fancyBox will not be able to get content type, it will try to guess based on 'href' and will quit silently if would not succeed.
 (this is different from previsous versions where 'ajax' was used as default type or an error message was displayed).
 
-Advanced
---------
+## Advanced
 
 ### Helpers
 
@@ -125,7 +121,6 @@ You can disable them, set custom options or enable other helpers. Examples:
         }
     });
 
-
 ### API
 
 Also available are event driven callback methods.  The `this` keyword refers to the current or upcoming object (depends on callback method). Here is how you can change title:
@@ -141,7 +136,7 @@ Also available are event driven callback methods.  The `this` keyword refers to 
         }
     });
 
-It`s possible to open fancyBox programmatically in various ways:
+It\`s possible to open fancyBox programmatically in various ways:
 
     //HTML content:
     $.fancybox( '<div><h1>Lorem Lipsum</h1><p>Lorem lipsum</p></div>', {
@@ -210,8 +205,6 @@ In that case, you might want to increase space around box:
         margin : [20, 60, 20, 60]
     });
 
+## Bug tracker
 
-Bug tracker
------------
-
-Have a bug? Please create an issue on GitHub at https://github.com/fancyapps/fancyBox/issues
+Have a bug? Please create an issue on GitHub at <https://github.com/fancyapps/fancyBox/issues>
