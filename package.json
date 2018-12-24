@@ -1,0 +1,20 @@
+{
+  "name": "lamson.me",
+  "version": "0.1.0",
+  "description": "My personal website @ https://lamson.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": "git+https://github.com/lamson/lamson.me.git",
+  "keywords": [
+    "lamson"
+  ],
+  "author": "Son Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamson/lamson.me/issues"
+  },
+  "homepage": "https://github.com/lamson/lamson.me#readme",
+  "private": false
+}
