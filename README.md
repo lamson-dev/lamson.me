@@ -1,10 +1,9 @@
-# My Personal Webpage 
+# My Personal Webpage
 
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
-[![Build Status](https://travis-ci.org/lamson/gatsby-starter.svg?branch=master)](https://travis-ci.org/lamson/gatsby-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/k06pajqcm23lay1s/branch/master?svg=true)](https://ci.appveyor.com/project/lamson/gatsby-starter/branch/master)
-[![Code Climate](https://codeclimate.com/github/lamson/gatsby-starter/badges/gpa.svg)](https://codeclimate.com/github/lamson/gatsby-starter)
-[![Test Coverage](https://codeclimate.com/github/lamson/gatsby-starter/badges/coverage.svg)](https://codeclimate.com/github/lamson/gatsby-starter/coverage)
+[![Build Status](https://travis-ci.org/lamson/lamson.me.svg?branch=master)](https://travis-ci.org/lamson/lamson.me)
+[![Maintainability](https://api.codeclimate.com/v1/badges/bf6ef4e2d2746e892295/maintainability)](https://codeclimate.com/github/lamson/lamson.me/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/bf6ef4e2d2746e892295/test_coverage)](https://codeclimate.com/github/lamson/lamson.me/test_coverage)
 
 Demo: <https://lamson-gatsby-starter.netlify.com/>
 
