@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/node,macos,webstorm,intellij,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,macos,webstorm,intellij,visualstudiocode
 
+/public
+/_how-i-built-this-site-in-the-80s
+
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
