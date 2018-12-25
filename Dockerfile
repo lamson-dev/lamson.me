@@ -1,7 +1,7 @@
 FROM node:8.14-alpine as builder
 
 WORKDIR /_lamson.me
-COPY package.json .
+COPY package.json yarn.lock ./
 
 # Install dependencies
 # node_modules/sharp requires `python` and `libvips`...
@@ -17,8 +17,6 @@ RUN apk update && apk --no-cache --virtual build-dependencies add python make g+
   && yarn install --frozen-lockfile --no-cache \
   && yarn build \
   && apk del build-dependencies
-
-COPY . .
 
 FROM nginx
 EXPOSE 80
