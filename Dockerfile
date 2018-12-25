@@ -1,7 +1,7 @@
 FROM node:8.14-alpine as builder
 
 WORKDIR /_lamson.me
-COPY package.json yarn.lock ./
+COPY . .
 
 # Install dependencies
 # node_modules/sharp requires `python` and `libvips`...

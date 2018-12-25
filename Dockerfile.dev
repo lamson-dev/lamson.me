@@ -1,7 +1,7 @@
 FROM node:8.14-alpine
 
 WORKDIR /_lamson.me
-COPY package.json yarn.lock ./
+COPY . .
 
 # Install dependencies
 # node_modules/sharp requires `python` and `libvips`...
@@ -16,8 +16,6 @@ RUN apk update && apk --no-cache --virtual build-dependencies add python make g+
   --repository https://alpine.global.ssl.fastly.net/alpine/edge/main \
   && yarn install --frozen-lockfile --no-cache \
   && apk del build-dependencies
-
-COPY . .
 
 # Default start command for `docker run ...`
 # CMD ...
