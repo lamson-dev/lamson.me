@@ -9,6 +9,19 @@ before_install:
 script:
   - docker run lamson/lamson.me yarn ci-check
 
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "lamson.me"
+  env: "Lamsonme-env"
+  bucket_name: "elasticbeanstalk-us-east-1-091733176652"
+  bucket_path: "lamson.me"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_ACCESS_SECRET_KEY"
+
 # addons:
 #   apt:
 #     sources:
