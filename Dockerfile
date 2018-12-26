@@ -6,17 +6,16 @@ COPY . .
 # Install dependencies
 # node_modules/sharp requires `python` and `libvips`...
 # See http://sharp.pixelplumbing.com/en/stable/install/#alpine-linux 
-#
-# --no-cache: download package index on-the-fly, no need to cleanup afterwards
-# --virtual: bundle packages, remove whole bundle at once, when done
-# See https://github.com/nodejs/docker-node/issues/282#issuecomment-358907790
-RUN apk update && apk --no-cache --virtual build-dependencies add python make g++ \
-  vips-dev fftw-dev build-base \
+RUN apk update \
+  && apk add vips-tools \
+  --repository http://dl-3.alpinelinux.org/alpine/edge/testing \
+  && apk add vips-dev fftw-dev build-base \
   --repository https://alpine.global.ssl.fastly.net/alpine/edge/testing/ \
   --repository https://alpine.global.ssl.fastly.net/alpine/edge/main \
-  && yarn install --frozen-lockfile --no-cache \
-  && yarn build \
-  && apk del build-dependencies
+  && apk add python \
+  && rm -rf /var/cache/apk/*
+
+RUN yarn install && yarn build
 
 FROM nginx
 EXPOSE 80
