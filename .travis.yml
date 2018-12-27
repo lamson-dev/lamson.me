@@ -9,6 +9,14 @@ before_install:
 script:
   - docker run lamson/lamson.me yarn ci-check
 
+after_success:
+  # Build production docker image
+  - docker build -t lamson/lamson.me .
+  # Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take prod image and push to docker hub
+  - docker push lamson/lamson.me
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
