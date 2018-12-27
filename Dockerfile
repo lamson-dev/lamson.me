@@ -13,9 +13,10 @@ RUN apk update \
   --repository https://alpine.global.ssl.fastly.net/alpine/edge/testing/ \
   --repository https://alpine.global.ssl.fastly.net/alpine/edge/main \
   && apk add python \
-  && rm -rf /var/cache/apk/*
+  && rm -rf /var/cache/apk/* \
+  && yarn install
 
-RUN yarn install && yarn build
+RUN yarn build
 
 FROM nginx
 EXPOSE 80
