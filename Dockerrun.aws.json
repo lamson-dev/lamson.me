@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "lamson/lamson.me",
+    "Update": "true"
+  },
+  "Ports": [{
+    "HostPort": 80,
+    "ContainerPort": 80
+  }],
+  "Logging": "/var/log/nginx"
+}
