@@ -17,11 +17,6 @@ after_success:
   # Take prod image and push to docker hub
   - docker push lamson/lamson.me
 
-before_deploy:
-  # Remove `Dockerfile` before deploying to Elastic Beanstalk
-  #  so EB will use `Dockerrun.aws.json` config instead of rebuilding the image
-  - rm Dockerfile
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
